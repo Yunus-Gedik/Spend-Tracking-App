@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A85A952352AB2967401BBC58 /* Pods_Spend_Tracking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */; };
+		D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9664F46274FE88F00435077 /* GoogleService-Info.plist */; };
+		D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F49274FF22100435077 /* RegisterViewController.swift */; };
+		D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */; };
+		D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4D274FF26100435077 /* GroupsViewController.swift */; };
+		D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */; };
+		D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */; };
+		D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F5274FE66F00688C55 /* ViewController.swift */; };
+		D9C5C3F9274FE66F00688C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3F7274FE66F00688C55 /* Main.storyboard */; };
+		D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3FA274FE67000688C55 /* Assets.xcassets */; };
+		D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spend_Tracking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.debug.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.release.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.release.xcconfig"; sourceTree = "<group>"; };
+		D9664F46274FE88F00435077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9664F49274FF22100435077 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		D9664F4D274FF26100435077 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		D9C5C3EE274FE66F00688C55 /* Spend Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spend Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9C5C3F5274FE66F00688C55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9C5C3F8274FE66F00688C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9C5C3FA274FE67000688C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9C5C3FD274FE67000688C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9C5C3FF274FE67000688C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C5C3EB274FE66F00688C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85A952352AB2967401BBC58 /* Pods_Spend_Tracking_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23E9C0A1E7355FB16E638E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E49E99B10157F854C159777 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */,
+				5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9664F48274FE90D00435077 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9C5C3F5274FE66F00688C55 /* ViewController.swift */,
+				D9664F49274FF22100435077 /* RegisterViewController.swift */,
+				D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */,
+				D9664F4D274FF26100435077 /* GroupsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9C5C3E5274FE66F00688C55 = {
+			isa = PBXGroup;
+			children = (
+				D9C5C3F0274FE66F00688C55 /* Spend Tracking App */,
+				D9C5C3EF274FE66F00688C55 /* Products */,
+				7E49E99B10157F854C159777 /* Pods */,
+				23E9C0A1E7355FB16E638E1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C5C3EF274FE66F00688C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C5C3EE274FE66F00688C55 /* Spend Tracking App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C5C3F0274FE66F00688C55 /* Spend Tracking App */ = {
+			isa = PBXGroup;
+			children = (
+				D9664F48274FE90D00435077 /* Controllers */,
+				D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */,
+				D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */,
+				D9C5C3F7274FE66F00688C55 /* Main.storyboard */,
+				D9C5C3FA274FE67000688C55 /* Assets.xcassets */,
+				D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */,
+				D9C5C3FF274FE67000688C55 /* Info.plist */,
+				D9664F46274FE88F00435077 /* GoogleService-Info.plist */,
+			);
+			path = "Spend Tracking App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C5C3ED274FE66F00688C55 /* Spend Tracking App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C5C402274FE67000688C55 /* Build configuration list for PBXNativeTarget "Spend Tracking App" */;
+			buildPhases = (
+				3CFC902105F94D96478924ED /* [CP] Check Pods Manifest.lock */,
+				D9C5C3EA274FE66F00688C55 /* Sources */,
+				D9C5C3EB274FE66F00688C55 /* Frameworks */,
+				D9C5C3EC274FE66F00688C55 /* Resources */,
+				73F369F0BE4717A6B9D83844 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spend Tracking App";
+			productName = "Spend Tracking App";
+			productReference = D9C5C3EE274FE66F00688C55 /* Spend Tracking App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C5C3E6274FE66F00688C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D9C5C3ED274FE66F00688C55 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = D9C5C3E9274FE66F00688C55 /* Build configuration list for PBXProject "Spend Tracking App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9C5C3E5274FE66F00688C55;
+			productRefGroup = D9C5C3EF274FE66F00688C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C5C3ED274FE66F00688C55 /* Spend Tracking App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C5C3EC274FE66F00688C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */,
+				D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */,
+				D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */,
+				D9C5C3F9274FE66F00688C55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CFC902105F94D96478924ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spend Tracking App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F369F0BE4717A6B9D83844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C5C3EA274FE66F00688C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
+				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
+				D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */,
+				D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */,
+				D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */,
+				D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9C5C3F7274FE66F00688C55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C5C3F8274FE66F00688C55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C5C3FD274FE67000688C55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9C5C400274FE67000688C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9C5C401274FE67000688C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C5C403274FE67000688C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 544RJAZ2W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spend Tracking App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunus-gedik.Spend-Tracking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9C5C404274FE67000688C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 544RJAZ2W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spend Tracking App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunus-gedik.Spend-Tracking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C5C3E9274FE66F00688C55 /* Build configuration list for PBXProject "Spend Tracking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C5C400274FE67000688C55 /* Debug */,
+				D9C5C401274FE67000688C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C5C402274FE67000688C55 /* Build configuration list for PBXNativeTarget "Spend Tracking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C5C403274FE67000688C55 /* Debug */,
+				D9C5C404274FE67000688C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9C5C3E6274FE66F00688C55 /* Project object */;
+}
