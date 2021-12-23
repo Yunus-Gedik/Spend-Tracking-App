@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		A85A952352AB2967401BBC58 /* Pods_Spend_Tracking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */; };
+		D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91467872752A5EA00355EEB /* PopUpViewController.swift */; };
+		D940AE9827748F7100754F5B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE9727748F7100754F5B /* Expense.swift */; };
+		D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE992774965700754F5B /* ExpenseType.swift */; };
 		D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9664F46274FE88F00435077 /* GoogleService-Info.plist */; };
 		D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F49274FF22100435077 /* RegisterViewController.swift */; };
 		D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */; };
 		D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4D274FF26100435077 /* GroupsViewController.swift */; };
+		D99020F027526A1000618ABD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020EF27526A1000618ABD /* ProfileViewController.swift */; };
+		D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F12752702000618ABD /* CreateGroupViewController.swift */; };
+		D99020F4275273C700618ABD /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F3275273C700618ABD /* GroupViewController.swift */; };
 		D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */; };
 		D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */; };
 		D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F5274FE66F00688C55 /* ViewController.swift */; };
-		D9C5C3F9274FE66F00688C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3F7274FE66F00688C55 /* Main.storyboard */; };
 		D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3FA274FE67000688C55 /* Assets.xcassets */; };
 		D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */; };
+		D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D398D827727956007175F5 /* AddExpenseViewController.swift */; };
+		D9F0232F276081EA0052D640 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0232E276081EA0052D640 /* Group.swift */; };
+		D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3F7274FE66F00688C55 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spend_Tracking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.debug.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.release.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.release.xcconfig"; sourceTree = "<group>"; };
+		D91467872752A5EA00355EEB /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D940AE9727748F7100754F5B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		D940AE992774965700754F5B /* ExpenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseType.swift; sourceTree = "<group>"; };
 		D9664F46274FE88F00435077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9664F49274FF22100435077 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		D9664F4D274FF26100435077 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		D99020EF27526A1000618ABD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D99020F12752702000618ABD /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		D99020F3275273C700618ABD /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		D9C5C3EE274FE66F00688C55 /* Spend Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spend Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +50,8 @@
 		D9C5C3FA274FE67000688C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9C5C3FD274FE67000688C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9C5C3FF274FE67000688C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D398D827727956007175F5 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		D9F0232E276081EA0052D640 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,11 @@
 				D9664F49274FF22100435077 /* RegisterViewController.swift */,
 				D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */,
 				D9664F4D274FF26100435077 /* GroupsViewController.swift */,
+				D99020EF27526A1000618ABD /* ProfileViewController.swift */,
+				D99020F12752702000618ABD /* CreateGroupViewController.swift */,
+				D99020F3275273C700618ABD /* GroupViewController.swift */,
+				D91467872752A5EA00355EEB /* PopUpViewController.swift */,
+				D9D398D827727956007175F5 /* AddExpenseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +120,7 @@
 		D9C5C3F0274FE66F00688C55 /* Spend Tracking App */ = {
 			isa = PBXGroup;
 			children = (
+				D9F0232D276081D30052D640 /* Models */,
 				D9664F48274FE90D00435077 /* Controllers */,
 				D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */,
 				D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */,
@@ -109,6 +131,16 @@
 				D9664F46274FE88F00435077 /* GoogleService-Info.plist */,
 			);
 			path = "Spend Tracking App";
+			sourceTree = "<group>";
+		};
+		D9F0232D276081D30052D640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9F0232E276081EA0052D640 /* Group.swift */,
+				D940AE9727748F7100754F5B /* Expense.swift */,
+				D940AE992774965700754F5B /* ExpenseType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +206,7 @@
 				D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */,
 				D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */,
 				D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */,
-				D9C5C3F9274FE66F00688C55 /* Main.storyboard in Resources */,
+				D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +259,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F0232F276081EA0052D640 /* Group.swift in Sources */,
+				D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */,
+				D99020F4275273C700618ABD /* GroupViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
+				D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */,
 				D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */,
+				D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */,
 				D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */,
+				D99020F027526A1000618ABD /* ProfileViewController.swift in Sources */,
 				D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */,
+				D940AE9827748F7100754F5B /* Expense.swift in Sources */,
+				D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */,
 				D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +356,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -370,6 +411,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

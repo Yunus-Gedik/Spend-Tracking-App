@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginClicked(_ sender: UIButton) {
+        
         if let email = emailField.text, let password = passwordField.text{
             Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
                 if let e = error {
