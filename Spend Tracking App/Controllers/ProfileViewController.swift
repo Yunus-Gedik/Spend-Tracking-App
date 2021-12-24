@@ -35,8 +35,7 @@ class ProfileViewController: UIViewController {
     @IBAction func logOutClicked(_ sender: Any) {
         do {
             try Auth.auth().signOut()
-            navigationController?.popViewController(animated: true);
-        }
+            self.navigationController?.popToRootViewController(animated: true)        }
         catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
         }
