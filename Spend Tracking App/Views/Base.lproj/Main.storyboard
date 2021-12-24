@@ -124,11 +124,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i9z-ML-O49">
                                 <rect key="frame" x="20" y="814" width="374" height="48"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TGW-Mb-koH">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TGW-Mb-koH">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYK-BF-orU">
-                                                <rect key="frame" x="0.0" y="0.0" width="213.5" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Create Personal Balance Sheet" cornerStyle="large"/>
                                                 <connections>
@@ -136,9 +136,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsM-Bv-N9k">
-                                                <rect key="frame" x="233.5" y="0.0" width="100.5" height="48"/>
+                                                <rect key="frame" x="177" y="0.0" width="157" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Join a Group" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="T8L-yt-W35" kind="show" id="Csu-Xm-Wz6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -277,6 +280,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aw8-s8-8ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2911.594202898551" y="65.625"/>
+        </scene>
+        <!--Join Group View Controller-->
+        <scene sceneID="CIU-p2-x8P">
+            <objects>
+                <viewController id="T8L-yt-W35" customClass="JoinGroupViewController" customModule="Spend_Tracking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vkq-wC-7G1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ih6-0C-qhI">
+                                <rect key="frame" x="30" y="431" width="354" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-HX-3Iy">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mt-S2-h0Q">
+                                        <rect key="frame" x="127" y="0.0" width="227" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4e-r7-g5F">
+                                <rect key="frame" x="30" y="510" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="44k-CD-7X9" userLabel="height = 40"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Join Group"/>
+                                <connections>
+                                    <action selector="joinGroupClicked:" destination="T8L-yt-W35" eventType="touchUpInside" id="fI2-4j-VFU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d0t-lF-2wr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d0t-lF-2wr" firstAttribute="trailing" secondItem="T4e-r7-g5F" secondAttribute="trailing" constant="30" id="9bD-aR-Dfd"/>
+                            <constraint firstItem="d0t-lF-2wr" firstAttribute="trailing" secondItem="ih6-0C-qhI" secondAttribute="trailing" constant="30" id="JTv-tL-gtI"/>
+                            <constraint firstItem="T4e-r7-g5F" firstAttribute="leading" secondItem="Vkq-wC-7G1" secondAttribute="leading" constant="30" id="JU0-Xc-ZMI"/>
+                            <constraint firstItem="ih6-0C-qhI" firstAttribute="centerY" secondItem="Vkq-wC-7G1" secondAttribute="centerY" id="Ogy-uF-sEJ"/>
+                            <constraint firstItem="ih6-0C-qhI" firstAttribute="leading" secondItem="d0t-lF-2wr" secondAttribute="leading" constant="30" id="Ze9-Aw-x1C"/>
+                            <constraint firstItem="T4e-r7-g5F" firstAttribute="top" secondItem="ih6-0C-qhI" secondAttribute="bottom" constant="45" id="ktm-J3-Pzy" userLabel="Join Group.top = Stack View.bottom + 30"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3W2-7I-QhQ"/>
+                    <connections>
+                        <outlet property="groupCode" destination="7mt-S2-h0Q" id="5oM-xe-ltW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWV-fB-aVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3970" y="66"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="caP-fK-vwM">
