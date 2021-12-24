@@ -34,6 +34,10 @@ class GroupViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.register(UINib(nibName: "ExpenseCell", bundle: nil), forCellReuseIdentifier: "expenseCell")
+        
+        tableView.rowHeight = 50.0
+        
         // Wrapper Box of summary
         summaryView.layer.borderWidth = 1
         summaryView.layer.borderColor = UIColor.black.cgColor
@@ -91,8 +95,25 @@ extension GroupViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "groupTableProt", for: indexPath)
-        cell.textLabel?.text = expenses[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "expenseCell", for: indexPath) as! ExpenseCell
+        cell.spender.text = expenses[indexPath.row].spender
+        cell.amount.text = String(expenses[indexPath.row].amount)
+        
+        /*
+        if let timeResult = (expenses[indexPath.row].date as? Double) {
+            let date = Date(timeIntervalSince1970: timeResult)
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
+            dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
+            dateFormatter.timeZone = .current
+            let localDate = dateFormatter.string(from: date)
+            print(localDate)
+        }
+        */
+        
+        cell.date.text = "temp" //expenses[indexPath.row].date
+        cell.type.text = expenses[indexPath.row].type.rawValue
+
         return cell
     }
     

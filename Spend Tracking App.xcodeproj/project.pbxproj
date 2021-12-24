@@ -15,6 +15,8 @@
 		D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F49274FF22100435077 /* RegisterViewController.swift */; };
 		D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */; };
 		D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4D274FF26100435077 /* GroupsViewController.swift */; };
+		D966CA0D2775C01B00F1C35A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966CA0B2775C01B00F1C35A /* ExpenseCell.swift */; };
+		D966CA0E2775C01B00F1C35A /* ExpenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */; };
 		D99020F027526A1000618ABD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020EF27526A1000618ABD /* ProfileViewController.swift */; };
 		D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F12752702000618ABD /* CreateGroupViewController.swift */; };
 		D99020F4275273C700618ABD /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F3275273C700618ABD /* GroupViewController.swift */; };
@@ -25,6 +27,8 @@
 		D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */; };
 		D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D398D827727956007175F5 /* AddExpenseViewController.swift */; };
 		D9F0232F276081EA0052D640 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0232E276081EA0052D640 /* Group.swift */; };
+		D9F54B782775CA8900888E0D /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F54B762775CA8900888E0D /* GroupCell.swift */; };
+		D9F54B792775CA8900888E0D /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F54B772775CA8900888E0D /* GroupCell.xib */; };
 		D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3F7274FE66F00688C55 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,8 @@
 		D9664F49274FF22100435077 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		D9664F4D274FF26100435077 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		D966CA0B2775C01B00F1C35A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpenseCell.xib; sourceTree = "<group>"; };
 		D99020EF27526A1000618ABD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D99020F12752702000618ABD /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		D99020F3275273C700618ABD /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 		D9C5C3FF274FE67000688C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D398D827727956007175F5 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		D9F0232E276081EA0052D640 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		D9F54B762775CA8900888E0D /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		D9F54B772775CA8900888E0D /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,18 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		D966CA0A2775BFB100F1C35A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9C5C3F7274FE66F00688C55 /* Main.storyboard */,
+				D966CA0B2775C01B00F1C35A /* ExpenseCell.swift */,
+				D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */,
+				D9F54B762775CA8900888E0D /* GroupCell.swift */,
+				D9F54B772775CA8900888E0D /* GroupCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D9C5C3E5274FE66F00688C55 = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				D9F0232D276081D30052D640 /* Models */,
+				D966CA0A2775BFB100F1C35A /* Views */,
 				D9664F48274FE90D00435077 /* Controllers */,
 				D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */,
 				D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */,
-				D9C5C3F7274FE66F00688C55 /* Main.storyboard */,
 				D9C5C3FA274FE67000688C55 /* Assets.xcassets */,
 				D9C5C3FC274FE67000688C55 /* LaunchScreen.storyboard */,
 				D9C5C3FF274FE67000688C55 /* Info.plist */,
@@ -204,8 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */,
+				D9F54B792775CA8900888E0D /* GroupCell.xib in Resources */,
 				D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */,
 				D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */,
+				D966CA0E2775C01B00F1C35A /* ExpenseCell.xib in Resources */,
 				D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,12 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D966CA0D2775C01B00F1C35A /* ExpenseCell.swift in Sources */,
 				D9F0232F276081EA0052D640 /* Group.swift in Sources */,
 				D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */,
 				D99020F4275273C700618ABD /* GroupViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
 				D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */,
+				D9F54B782775CA8900888E0D /* GroupCell.swift in Sources */,
 				D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */,
 				D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */,
 				D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */,

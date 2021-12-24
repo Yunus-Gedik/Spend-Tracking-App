@@ -24,29 +24,35 @@ class GroupsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.register(UINib(nibName: "GroupCell", bundle: nil), forCellReuseIdentifier: "groupCell")
+        
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
+        tableView.rowHeight = 60.0
+        
         db.collection("group").order(by: "date")
             .addSnapshotListener { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self.groups.removeAll()
-                for document in querySnapshot!.documents {
-                    let data = document.data()
-                    if((data["users"] as! Array<String>).contains((Auth.auth().currentUser?.email)! as String)){
-                        let group = Group(code: data["code"] as! String,
-                                          admin: data["admin"] as! String,
-                                          name: data["name"] as! String,
-                                          description: data["description"] as! String,
-                                          period: data["period"] as! Int,
-                                          users: data["users"] as! [String],
-                                          autherizedUsers: data["autherizedUsers"] as! [String],
-                                          date: data["date"] as! NSNumber)
-                        self.groups.append(group)
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    self.groups.removeAll()
+                    for document in querySnapshot!.documents {
+                        let data = document.data()
+                        if((data["users"] as! Array<String>).contains((Auth.auth().currentUser?.email)! as String)){
+                            let group = Group(code: data["code"] as! String,
+                                              admin: data["admin"] as! String,
+                                              name: data["name"] as! String,
+                                              description: data["description"] as! String,
+                                              period: data["period"] as! Int,
+                                              users: data["users"] as! [String],
+                                              autherizedUsers: data["autherizedUsers"] as! [String],
+                                              date: data["date"] as! NSNumber)
+                            self.groups.append(group)
+                        }
                     }
+                    self.reloadData()
                 }
-                self.reloadData()
             }
-        }
     }
     
     @IBAction func profileClicked(_ sender: UIBarButtonItem) {
@@ -84,8 +90,8 @@ extension GroupsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "groupsTableProt", for: indexPath)
-        cell.textLabel?.text = groups[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath) as! GroupCell
+        cell.name.text = groups[indexPath.row].name
         return cell
     }
     
