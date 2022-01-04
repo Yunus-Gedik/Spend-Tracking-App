@@ -13,7 +13,6 @@ class JoinGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func joinGroupClicked(_ sender: UIButton) {

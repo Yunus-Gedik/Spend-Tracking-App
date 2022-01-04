@@ -33,50 +33,50 @@ class AddExpenseViewController: UIViewController {
     @IBAction func foodSwitchValueChanged(_ sender: UISwitch) {
         currentSwitch = ExpenseType.food
         if(sender.isOn){
-            otherSwitch.isOn = false
-            luxurySwitch.isOn = false
-            rentSwitch.isOn = false
-            eventSwitch.isOn = false
+            otherSwitch.setOn(false, animated: true)
+            luxurySwitch.setOn(false, animated: true)
+            rentSwitch.setOn(false, animated: true)
+            eventSwitch.setOn(false, animated: true)
         }
     }
     
     @IBAction func luxurySwitchValueChanged(_ sender: UISwitch) {
         currentSwitch = ExpenseType.luxury
         if(sender.isOn){
-            foodSwitch.isOn = false
-            otherSwitch.isOn = false
-            rentSwitch.isOn = false
-            eventSwitch.isOn = false
+            foodSwitch.setOn(false, animated: true)
+            otherSwitch.setOn(false, animated: true)
+            rentSwitch.setOn(false, animated: true)
+            eventSwitch.setOn(false, animated: true)
         }
     }
     
     @IBAction func rentSwitchValueChanged(_ sender: UISwitch) {
         currentSwitch = ExpenseType.rent
         if(sender.isOn){
-            foodSwitch.isOn = false
-            luxurySwitch.isOn = false
-            otherSwitch.isOn = false
-            eventSwitch.isOn = false
+            foodSwitch.setOn(false, animated: true)
+            luxurySwitch.setOn(false, animated: true)
+            otherSwitch.setOn(false, animated: true)
+            eventSwitch.setOn(false, animated: true)
         }
     }
     
     @IBAction func eventSwitchValueChanged(_ sender: UISwitch) {
         currentSwitch = ExpenseType.event
         if(sender.isOn){
-            foodSwitch.isOn = false
-            luxurySwitch.isOn = false
-            rentSwitch.isOn = false
-            otherSwitch.isOn = false
+            foodSwitch.setOn(false, animated: true)
+            luxurySwitch.setOn(false, animated: true)
+            rentSwitch.setOn(false, animated: true)
+            otherSwitch.setOn(false, animated: true)
         }
     }
     
     @IBAction func otherSwitchValueChanged(_ sender: UISwitch) {
         currentSwitch = ExpenseType.other
         if(sender.isOn){
-            foodSwitch.isOn = false
-            luxurySwitch.isOn = false
-            rentSwitch.isOn = false
-            eventSwitch.isOn = false
+            foodSwitch.setOn(false, animated: true)
+            luxurySwitch.setOn(false, animated: true)
+            rentSwitch.setOn(false, animated: true)
+            eventSwitch.setOn(false, animated: true)
         }
     }
     
