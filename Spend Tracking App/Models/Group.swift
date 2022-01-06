@@ -12,7 +12,7 @@ struct Group{
     let admin: String
     let name: String
     let description: String
-    let period: Int
+    let joinByCode: Bool
     let users: [String]
     let autherizedUsers: [String]
     let date: NSNumber

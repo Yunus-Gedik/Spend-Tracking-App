@@ -13,14 +13,16 @@ class GroupViewController: UIViewController {
     @IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var daysPassedLabel: UILabel!
-    @IBOutlet weak var daysLeftLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-
-    var expenses: [Expense] = []
-    var groupCode: String?
     
+    var expenses: [Expense] = []
+    var selectedExpense: Expense?
+    
+    // Input
+    var groupCode: String?
     var titleInput: String?
+    
     let db = Firestore.firestore()
     
     
@@ -46,16 +48,16 @@ class GroupViewController: UIViewController {
         
         /*
          // Delete all documents of a collection
-        db.collection("expense").addSnapshotListener() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    self.db.collection("expense").document("\(document.documentID)").delete()
-                }
-            }
-        }
-        */
+         db.collection("expense").addSnapshotListener() { (querySnapshot, err) in
+         if let err = err {
+         print("Error getting documents: \(err)")
+         } else {
+         for document in querySnapshot!.documents {
+         self.db.collection("expense").document("\(document.documentID)").delete()
+         }
+         }
+         }
+         */
         
         db.collection("expense")
             .order(by: "date")
@@ -84,6 +86,21 @@ class GroupViewController: UIViewController {
             }
     }
     
+    @IBAction func createExpenseClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "addExpense", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "addExpense"){
+            let obj = segue.destination as! AddExpenseViewController
+            obj.groupCode = self.groupCode!
+        }
+        else if (segue.identifier == "expenseDetail"){
+            let obj = segue.destination as! ExpenseDetailViewController
+            obj.expense = selectedExpense
+        }
+    }
+    
     func reloadData(){
         self.tableView.reloadData()
     }
@@ -96,24 +113,23 @@ extension GroupViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "expenseCell", for: indexPath) as! ExpenseCell
-        cell.spender.text = expenses[indexPath.row].spender
+        cell.name.text = expenses[indexPath.row].name
         cell.amount.text = String(expenses[indexPath.row].amount)
         
-        /*
+        
+        var localDate: String?
         if let timeResult = (expenses[indexPath.row].date as? Double) {
             let date = Date(timeIntervalSince1970: timeResult)
             let dateFormatter = DateFormatter()
-            dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
-            dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
+            dateFormatter.timeStyle = .none //Set time style
+            dateFormatter.dateStyle = .medium //Set date style
             dateFormatter.timeZone = .current
-            let localDate = dateFormatter.string(from: date)
-            print(localDate)
+            localDate = dateFormatter.string(from: date)
         }
-        */
         
-        cell.date.text = "temp" //expenses[indexPath.row].date
-        cell.type.text = expenses[indexPath.row].type.rawValue
-
+        
+        cell.date.text = localDate!
+        
         return cell
     }
     
@@ -122,13 +138,7 @@ extension GroupViewController: UITableViewDataSource {
 
 extension GroupViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       //performSegue(withIdentifier: "addExpense", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "addExpense"){
-            let obj = segue.destination as! AddExpenseViewController
-            obj.groupCode = groupCode
-        }
+        self.selectedExpense = expenses[indexPath.row]
+        performSegue(withIdentifier: "expenseDetail", sender: self)
     }
 }

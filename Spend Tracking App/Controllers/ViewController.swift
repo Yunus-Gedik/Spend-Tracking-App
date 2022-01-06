@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func passwordDone(_ sender: UITextField) {
         sender.resignFirstResponder()
+        loginClicked(UIButton())
     }
     
     @IBAction func forgotPasswordClicked(_ sender: UIButton) {

@@ -20,25 +20,19 @@
                         <rect key="frame" x="30" y="15" width="260" height="14"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwT-23-TOI">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="14"/>
+                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-94-vvv">
-                                <rect key="frame" x="70" y="0.0" width="50" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-94-vvv" userLabel="Name">
+                                <rect key="frame" x="93.5" y="0.0" width="73" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grn-DL-gl9">
-                                <rect key="frame" x="140" y="0.0" width="50" height="14"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mml-pF-WKU">
-                                <rect key="frame" x="210" y="0.0" width="50" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mml-pF-WKU">
+                                <rect key="frame" x="186.5" y="0.0" width="73.5" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,10 +49,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="amount" destination="Mml-pF-WKU" id="2lH-nI-oCQ"/>
-                <outlet property="date" destination="QwT-23-TOI" id="yN4-QG-70b"/>
-                <outlet property="spender" destination="Grn-DL-gl9" id="0D5-JY-ueq"/>
-                <outlet property="type" destination="DlK-94-vvv" id="HTt-IP-dtu"/>
+                <outlet property="amount" destination="Mml-pF-WKU" id="CwG-ip-xSw"/>
+                <outlet property="date" destination="QwT-23-TOI" id="jGY-yT-bUM"/>
+                <outlet property="name" destination="DlK-94-vvv" id="dBM-ea-QZH"/>
             </connections>
             <point key="canvasLocation" x="139" y="114"/>
         </tableViewCell>

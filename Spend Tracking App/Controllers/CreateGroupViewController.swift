@@ -10,12 +10,11 @@ import Firebase
 
 class CreateGroupViewController: UIViewController {
 
-    @IBOutlet weak var period: UILabel!
     @IBOutlet weak var invitationCode: UILabel!
     @IBOutlet weak var groupName: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    
-    var periodDays: Int = 7
+    @IBOutlet weak var byCodeSwitch: UISwitch!
+    @IBOutlet weak var byCodeLabel: UILabel!
     
     let db = Firestore.firestore()
     
@@ -37,7 +36,7 @@ class CreateGroupViewController: UIViewController {
                 "name": groupName.text!,
                 "description": descriptionTextField.text!,
                 "code": invitationCode.text!,
-                "period": periodDays,
+                "joinByCode": byCodeSwitch.isOn,
                 "admin": Auth.auth().currentUser!.email! as String,
                 "autherizedUsers": [String].init(),
                 "users": [(Auth.auth().currentUser?.email)! as String],
@@ -52,9 +51,4 @@ class CreateGroupViewController: UIViewController {
             }
         }
     }
-    @IBAction func sliderValueChanged(_ sender: UISlider) {
-        period.text = String(Int(sender.value)) + " Days"
-        periodDays = Int(sender.value)
-    }
-    
 }

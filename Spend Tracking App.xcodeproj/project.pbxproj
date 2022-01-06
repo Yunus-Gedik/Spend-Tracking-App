@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A85A952352AB2967401BBC58 /* Pods_Spend_Tracking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */; };
 		D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91467872752A5EA00355EEB /* PopUpViewController.swift */; };
+		D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */; };
 		D940AE9827748F7100754F5B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE9727748F7100754F5B /* Expense.swift */; };
 		D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE992774965700754F5B /* ExpenseType.swift */; };
 		D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9664F46274FE88F00435077 /* GoogleService-Info.plist */; };
@@ -38,6 +39,7 @@
 		459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.debug.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.release.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.release.xcconfig"; sourceTree = "<group>"; };
 		D91467872752A5EA00355EEB /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewController.swift; sourceTree = "<group>"; };
 		D940AE9727748F7100754F5B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		D940AE992774965700754F5B /* ExpenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseType.swift; sourceTree = "<group>"; };
 		D9664F46274FE88F00435077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				D91467872752A5EA00355EEB /* PopUpViewController.swift */,
 				D9D398D827727956007175F5 /* AddExpenseViewController.swift */,
 				D9DCA0CC2775EEE500B5FA72 /* JoinGroupViewController.swift */,
+				D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				D99020F4275273C700618ABD /* GroupViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
+				D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */,
 				D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */,
 				D9F54B782775CA8900888E0D /* GroupCell.swift in Sources */,
 				D9DCA0CD2775EEE500B5FA72 /* JoinGroupViewController.swift in Sources */,

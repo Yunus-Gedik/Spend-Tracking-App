@@ -43,7 +43,7 @@ class GroupsViewController: UIViewController {
                                               admin: data["admin"] as! String,
                                               name: data["name"] as! String,
                                               description: data["description"] as! String,
-                                              period: data["period"] as! Int,
+                                              joinByCode: data["joinByCode"] as! Bool,
                                               users: data["users"] as! [String],
                                               autherizedUsers: data["autherizedUsers"] as! [String],
                                               date: data["date"] as! NSNumber)
@@ -78,6 +78,19 @@ class GroupsViewController: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showGroupDetail"){
+            let obj = segue.destination as! GroupViewController
+            obj.groupCode = selectedGroup!.code
+            obj.title = selectedGroup!.name
+        }
+        else if(segue.identifier == "goProfile"){
+            let obj = segue.destination as! ProfileViewController
+            obj.user = Auth.auth().currentUser?.email
+        }
+    }
+    
+    
     func reloadData(){
         self.tableView.reloadData()
     }
@@ -105,11 +118,4 @@ extension GroupsViewController: UITableViewDelegate{
         performSegue(withIdentifier: "showGroupDetail", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showGroupDetail"){
-            let obj = segue.destination as! GroupViewController
-            obj.groupCode = selectedGroup!.code
-            obj.title = selectedGroup!.name
-        }
-    }
 }
