@@ -14,6 +14,7 @@ class GroupInfoViewController: UIViewController {
     @IBOutlet var codeLabel: UILabel!
     @IBOutlet var adminButton: UIButton!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var groupDescLabel: UILabel!
     
     @IBOutlet var createReportButton: UIButton!
     @IBOutlet var lastReportButton: UIButton!
@@ -40,6 +41,7 @@ class GroupInfoViewController: UIViewController {
                     self.groupNameLabel.text =  data["name"] as? String
                     self.codeLabel.text = data["code"] as? String
                     self.adminEmail = data["admin"] as? String
+                    self.groupDescLabel.text = data["description"] as? String
                     
                     if(self.adminEmail! != Auth.auth().currentUser?.email!){
                         self.createReportButton.isHidden = true

@@ -976,7 +976,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR3-hl-8P8">
-                                <rect key="frame" x="103.33333333333331" y="222" width="207.66666666666669" height="42"/>
+                                <rect key="frame" x="103.33333333333333" y="222" width="207.66666666666669" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1198,6 +1198,23 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f0Z-WT-eUj">
+                                <rect key="frame" x="30" y="257.33333333333331" width="354" height="20.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqa-Tl-IxJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.583165559" green="0.583165559" blue="0.583165559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVu-AC-Vlo">
+                                        <rect key="frame" x="177" y="0.0" width="177" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thZ-bA-o1G">
                                 <rect key="frame" x="30" y="632" width="354" height="35"/>
                                 <constraints>
@@ -1223,13 +1240,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CSa-2d-fvL" firstAttribute="bottom" secondItem="thZ-bA-o1G" secondAttribute="bottom" constant="20" id="0fC-Z6-Z9b"/>
+                            <constraint firstItem="f0Z-WT-eUj" firstAttribute="leading" secondItem="CSa-2d-fvL" secondAttribute="leading" constant="30" id="0lp-kC-WO9"/>
                             <constraint firstItem="CSa-2d-fvL" firstAttribute="trailing" secondItem="thZ-bA-o1G" secondAttribute="trailing" constant="30" id="F7v-Fl-jNo"/>
                             <constraint firstItem="thZ-bA-o1G" firstAttribute="leading" secondItem="CSa-2d-fvL" secondAttribute="leading" constant="30" id="FLQ-Ad-FhV"/>
                             <constraint firstItem="CSa-2d-fvL" firstAttribute="trailing" secondItem="b73-lT-G5I" secondAttribute="trailing" constant="30" id="KWX-My-Gy2"/>
                             <constraint firstItem="QLC-yL-0P4" firstAttribute="leading" secondItem="CSa-2d-fvL" secondAttribute="leading" constant="30" id="Sws-kH-IHx"/>
                             <constraint firstItem="thZ-bA-o1G" firstAttribute="top" secondItem="l56-6D-94X" secondAttribute="bottom" constant="15" id="VWd-To-iwp"/>
+                            <constraint firstItem="f0Z-WT-eUj" firstAttribute="top" secondItem="QLC-yL-0P4" secondAttribute="bottom" constant="20" id="Wxh-mK-h3B"/>
                             <constraint firstItem="CSa-2d-fvL" firstAttribute="trailing" secondItem="l56-6D-94X" secondAttribute="trailing" constant="30" id="XKs-uT-v0P"/>
                             <constraint firstItem="b73-lT-G5I" firstAttribute="top" secondItem="CSa-2d-fvL" secondAttribute="top" constant="20" id="eWr-zs-0B9"/>
+                            <constraint firstItem="CSa-2d-fvL" firstAttribute="trailing" secondItem="f0Z-WT-eUj" secondAttribute="trailing" constant="30" id="gTJ-3D-YOv"/>
                             <constraint firstItem="l56-6D-94X" firstAttribute="leading" secondItem="CSa-2d-fvL" secondAttribute="leading" constant="30" id="iMu-0Y-GxU"/>
                             <constraint firstItem="CSa-2d-fvL" firstAttribute="trailing" secondItem="QLC-yL-0P4" secondAttribute="trailing" constant="30" id="iYN-n0-Yb2"/>
                             <constraint firstItem="b73-lT-G5I" firstAttribute="leading" secondItem="CSa-2d-fvL" secondAttribute="leading" constant="30" id="lFB-04-OWJ"/>
@@ -1243,6 +1263,7 @@
                         <outlet property="codeLabel" destination="slu-ES-8oM" id="vYA-aE-cJw"/>
                         <outlet property="createReportButton" destination="l56-6D-94X" id="cJT-OM-0p3"/>
                         <outlet property="dateLabel" destination="zv4-z2-7HQ" id="jQj-ng-yWw"/>
+                        <outlet property="groupDescLabel" destination="DVu-AC-Vlo" id="BcV-vs-LVf"/>
                         <outlet property="groupNameLabel" destination="jNe-wW-WMV" id="wfj-fb-DrO"/>
                         <outlet property="lastReportButton" destination="thZ-bA-o1G" id="Etq-3J-XJ4"/>
                         <segue destination="W3t-MG-FNN" kind="show" identifier="showAdminInfo" id="kti-DN-YHB"/>
@@ -1254,7 +1275,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yhC-QT-Tlx"/>
+        <segue reference="kti-DN-YHB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="circle.hexagonpath.fill" catalog="system" width="128" height="112"/>
