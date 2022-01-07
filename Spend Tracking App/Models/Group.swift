@@ -15,5 +15,6 @@ struct Group{
     let joinByCode: Bool
     let users: [String]
     let autherizedUsers: [String]
+    let requests: [String]
     let date: NSNumber
 }

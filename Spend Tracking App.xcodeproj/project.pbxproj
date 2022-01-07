@@ -18,9 +18,11 @@
 		D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4D274FF26100435077 /* GroupsViewController.swift */; };
 		D966CA0D2775C01B00F1C35A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966CA0B2775C01B00F1C35A /* ExpenseCell.swift */; };
 		D966CA0E2775C01B00F1C35A /* ExpenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */; };
+		D98904102788407100635BF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989040F2788407100635BF7 /* TabBarViewController.swift */; };
+		D98904122788477800635BF7 /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98904112788477800635BF7 /* GroupInfoViewController.swift */; };
 		D99020F027526A1000618ABD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020EF27526A1000618ABD /* ProfileViewController.swift */; };
 		D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F12752702000618ABD /* CreateGroupViewController.swift */; };
-		D99020F4275273C700618ABD /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F3275273C700618ABD /* GroupViewController.swift */; };
+		D99020F4275273C700618ABD /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99020F3275273C700618ABD /* ExpensesViewController.swift */; };
 		D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */; };
 		D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */; };
 		D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3F5274FE66F00688C55 /* ViewController.swift */; };
@@ -48,9 +50,11 @@
 		D9664F4D274FF26100435077 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		D966CA0B2775C01B00F1C35A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpenseCell.xib; sourceTree = "<group>"; };
+		D989040F2788407100635BF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D98904112788477800635BF7 /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
 		D99020EF27526A1000618ABD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D99020F12752702000618ABD /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
-		D99020F3275273C700618ABD /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		D99020F3275273C700618ABD /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		D9C5C3EE274FE66F00688C55 /* Spend Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spend Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C5C3F1274FE66F00688C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C5C3F3274FE66F00688C55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,11 +108,13 @@
 				D9664F4D274FF26100435077 /* GroupsViewController.swift */,
 				D99020EF27526A1000618ABD /* ProfileViewController.swift */,
 				D99020F12752702000618ABD /* CreateGroupViewController.swift */,
-				D99020F3275273C700618ABD /* GroupViewController.swift */,
+				D99020F3275273C700618ABD /* ExpensesViewController.swift */,
 				D91467872752A5EA00355EEB /* PopUpViewController.swift */,
 				D9D398D827727956007175F5 /* AddExpenseViewController.swift */,
 				D9DCA0CC2775EEE500B5FA72 /* JoinGroupViewController.swift */,
 				D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */,
+				D989040F2788407100635BF7 /* TabBarViewController.swift */,
+				D98904112788477800635BF7 /* GroupInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,7 +296,7 @@
 				D966CA0D2775C01B00F1C35A /* ExpenseCell.swift in Sources */,
 				D9F0232F276081EA0052D640 /* Group.swift in Sources */,
 				D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */,
-				D99020F4275273C700618ABD /* GroupViewController.swift in Sources */,
+				D99020F4275273C700618ABD /* ExpensesViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
 				D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */,
@@ -299,7 +305,9 @@
 				D9DCA0CD2775EEE500B5FA72 /* JoinGroupViewController.swift in Sources */,
 				D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */,
 				D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */,
+				D98904122788477800635BF7 /* GroupInfoViewController.swift in Sources */,
 				D9C5C3F2274FE66F00688C55 /* AppDelegate.swift in Sources */,
+				D98904102788407100635BF7 /* TabBarViewController.swift in Sources */,
 				D99020F027526A1000618ABD /* ProfileViewController.swift in Sources */,
 				D9C5C3F4274FE66F00688C55 /* SceneDelegate.swift in Sources */,
 				D940AE9827748F7100754F5B /* Expense.swift in Sources */,

@@ -40,6 +40,7 @@ class CreateGroupViewController: UIViewController {
                 "admin": Auth.auth().currentUser!.email! as String,
                 "autherizedUsers": [String].init(),
                 "users": [(Auth.auth().currentUser?.email)! as String],
+                "requests":[String].init(),
                 "date":Date().timeIntervalSince1970
             ]) { err in
                 if let err = err {

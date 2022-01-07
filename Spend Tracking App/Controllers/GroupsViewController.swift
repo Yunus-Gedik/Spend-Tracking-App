@@ -30,6 +30,21 @@ class GroupsViewController: UIViewController {
         
         tableView.rowHeight = 60.0
         
+        
+        /*
+        // Delete all documents of a collection
+        db.collection("group").addSnapshotListener() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    self.db.collection("group").document("\(document.documentID)").delete()
+                }
+            }
+        }
+         */
+        
+        
         db.collection("group").order(by: "date")
             .addSnapshotListener { (querySnapshot, err) in
                 if let err = err {
@@ -46,6 +61,7 @@ class GroupsViewController: UIViewController {
                                               joinByCode: data["joinByCode"] as! Bool,
                                               users: data["users"] as! [String],
                                               autherizedUsers: data["autherizedUsers"] as! [String],
+                                              requests: data["requests"] as! [String],
                                               date: data["date"] as! NSNumber)
                             self.groups.append(group)
                         }
@@ -80,9 +96,9 @@ class GroupsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showGroupDetail"){
-            let obj = segue.destination as! GroupViewController
+            let obj = segue.destination as! TabBarViewController
             obj.groupCode = selectedGroup!.code
-            obj.title = selectedGroup!.name
+            obj.titleInput = selectedGroup!.name
         }
         else if(segue.identifier == "goProfile"){
             let obj = segue.destination as! ProfileViewController

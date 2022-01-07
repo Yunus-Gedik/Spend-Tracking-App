@@ -11,7 +11,23 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "GroupsViewController.prepare(for:sender:):GroupsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destination">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in GroupViewController.viewDidLoad():GroupViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TabBarViewController.viewDidLoad():TabBarViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewControllers!">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
@@ -28,9 +44,6 @@
                value = "db.collection(&quot;expense&quot;).get()">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "GroupsViewController.prepare(for:sender:):GroupsViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

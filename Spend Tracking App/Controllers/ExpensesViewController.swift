@@ -1,5 +1,5 @@
 //
-//  GroupViewController.swift
+//  ExpensesViewController.swift
 //  Spend Tracking App
 //
 //  Created by Yunus Gedik on 27.11.2021.
@@ -8,12 +8,10 @@
 import UIKit
 import Firebase
 
-class GroupViewController: UIViewController {
+class ExpensesViewController: UIViewController {
     
     @IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var amountLabel: UILabel!
-    @IBOutlet weak var daysPassedLabel: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
     
     var expenses: [Expense] = []
@@ -21,17 +19,12 @@ class GroupViewController: UIViewController {
     
     // Input
     var groupCode: String?
-    var titleInput: String?
     
     let db = Firestore.firestore()
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let t = titleInput{
-            self.title = t
-        }
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -106,7 +99,7 @@ class GroupViewController: UIViewController {
     }
 }
 
-extension GroupViewController: UITableViewDataSource {
+extension ExpensesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         expenses.count
     }
@@ -136,7 +129,7 @@ extension GroupViewController: UITableViewDataSource {
 }
 
 
-extension GroupViewController: UITableViewDelegate{
+extension ExpensesViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedExpense = expenses[indexPath.row]
         performSegue(withIdentifier: "expenseDetail", sender: self)
