@@ -25,7 +25,7 @@ class AddExpenseViewController: UIViewController {
     
     let db = Firestore.firestore()
     var currentSwitch: ExpenseType?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -85,7 +85,7 @@ class AddExpenseViewController: UIViewController {
             var ref: DocumentReference? = nil
             ref = db.collection("expense").addDocument(data: [
                 "name": expenseNameTextField.text!,
-                "amount": Float(String(format:"%.2f", Float(amountTextField.text!)!))!,
+                "amount": Float(String(format:"%.2f", amountTextField.text!.doubleValue))!,
                 "spender": Auth.auth().currentUser!.email! as String,
                 "type": currentSwitch!.rawValue,
                 "group": groupCode!,
@@ -101,4 +101,20 @@ class AddExpenseViewController: UIViewController {
         }
     }
     
+}
+
+extension String {
+    static let numberFormatter = NumberFormatter()
+    var doubleValue: Double {
+        String.numberFormatter.decimalSeparator = "."
+        if let result =  String.numberFormatter.number(from: self) {
+            return result.doubleValue
+        } else {
+            String.numberFormatter.decimalSeparator = ","
+            if let result = String.numberFormatter.number(from: self) {
+                return result.doubleValue
+            }
+        }
+        return 0
+    }
 }
