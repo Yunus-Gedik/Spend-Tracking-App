@@ -75,6 +75,10 @@ class ExpensesViewController: UIViewController {
                     }
                     self.amountLabel.text = String(format:"%.2f", tempAmount)
                     self.reloadData()
+                    
+                    // Scroll to bottom of expenses
+                    let indexPath = IndexPath(row: self.expenses.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: indexPath , at: .top , animated: false)
                 }
             }
     }
