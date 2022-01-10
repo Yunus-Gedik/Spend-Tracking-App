@@ -27,7 +27,7 @@ class GroupInfoViewController: UIViewController {
     var adminEmail: String?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()/*
         db.collection("group")
             .whereField("code", isEqualTo: groupCode!)
             .addSnapshotListener { (querySnapshot, err) in
@@ -74,7 +74,7 @@ class GroupInfoViewController: UIViewController {
                             }
                         }
                 }
-            }
+            }*/
     }
     
     
