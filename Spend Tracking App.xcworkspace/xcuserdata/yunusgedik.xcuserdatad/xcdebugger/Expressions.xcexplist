@@ -3,10 +3,62 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "UserListViewController.tableView(_:numberOfRowsInSection:):UserListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "users.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GroupViewController.viewDidLoad():GroupViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "db.collection(&quot;expense&quot;).get()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in GroupInfoViewController.viewDidLoad():GroupInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.distancetoButtons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserListViewController.prepare(for:sender:):UserListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.indexPathForSelectedRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in GroupsViewController.viewDidLoad():GroupsViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "document.data()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserListViewController.viewDidLoad():UserListViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ExpensesViewController.viewDidLoad():ExpensesViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in GroupViewController.viewDidLoad():GroupViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UserListViewController.viewDidLoad():UserListViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TabBarViewController.viewDidLoad():TabBarViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewControllers!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -19,29 +71,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in GroupViewController.viewDidLoad():GroupViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "TabBarViewController.viewDidLoad():TabBarViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.viewControllers!">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "(Auth.auth().currentUser?.email)! as String">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "GroupViewController.viewDidLoad():GroupViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "db.collection(&quot;expense&quot;).get()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

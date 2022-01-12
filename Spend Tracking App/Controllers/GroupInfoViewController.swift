@@ -17,18 +17,24 @@ class GroupInfoViewController: UIViewController {
     @IBOutlet var groupDescLabel: UILabel!
     
     @IBOutlet var createReportButton: UIButton!
-    @IBOutlet var lastReportButton: UIButton!
+    @IBOutlet var reviewJoinRequestsButton: UIButton!
+
+    var adminEmail: String?
+    var autherizedUsers = [String]()
+    var allUsers = [String]()
     
-    // Input
-    var groupCode: String?
+    var allClicked: Bool?
     
     let db = Firestore.firestore()
-    
-    var adminEmail: String?
+
+    // Input
+    var groupCode: String?
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()/*
+        super.viewDidLoad()
         db.collection("group")
+            .order(by: "date")
             .whereField("code", isEqualTo: groupCode!)
             .addSnapshotListener { (querySnapshot, err) in
                 if let err = err {
@@ -38,6 +44,9 @@ class GroupInfoViewController: UIViewController {
                     let t = querySnapshot!.documents[0]
                     let data = t.data()
                     
+                    self.autherizedUsers = data["autherizedUsers"] as! [String]
+                    self.allUsers = data["users"] as! [String]
+                    
                     self.groupNameLabel.text =  data["name"] as? String
                     self.codeLabel.text = data["code"] as? String
                     self.adminEmail = data["admin"] as? String
@@ -45,7 +54,7 @@ class GroupInfoViewController: UIViewController {
                     
                     if(self.adminEmail! != Auth.auth().currentUser?.email!){
                         self.createReportButton.isHidden = true
-                        self.lastReportButton.isHidden = true
+                        self.reviewJoinRequestsButton.isHidden = true
                     }
                     
                     var localDate: String?
@@ -74,24 +83,58 @@ class GroupInfoViewController: UIViewController {
                             }
                         }
                 }
-            }*/
-    }
-    
-    
-    @IBAction func createReportClicked(_ sender: UIButton) {
-    }
-    
-    @IBAction func lastReportClicked(_ sender: UIButton) {
+            }
     }
     
     @IBAction func adminClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "showAdminInfo", sender: self)
     }
     
+    @IBAction func reviewRequestsClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "goReviewRequests", sender: self)
+    }
+    
+    @IBAction func createReportClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "goReport", sender: self)
+    }
+    
+    @IBAction func allUsersClicked(_ sender: UIButton) {
+        allClicked = true
+        performSegue(withIdentifier: "goUserList", sender: self)
+    }
+    
+    @IBAction func autherizedUsers(_ sender: UIButton) {
+        allClicked = false
+        performSegue(withIdentifier: "goUserList", sender: self)
+    }
+    
+    @IBAction func lastReportClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "goReport", sender: self)
+    }
+    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showAdminInfo"){
             let obj = segue.destination as! ProfileViewController
             obj.user = adminEmail!
+        }
+        else if(segue.identifier == "goReviewRequests"){
+            let obj = segue.destination as! ReviewRequestsViewController
+            //obj.groupCode = groupCode!
+        }
+        else if(segue.identifier == "goReport"){
+            let obj = segue.destination as! ReportViewController
+            //obj.groupCode = groupCode!
+        }
+        else if(segue.identifier == "goUserList"){
+            let obj = segue.destination as! UserListViewController
+            if(allClicked!){
+                obj.userEmails = allUsers
+            }
+            else{
+                obj.userEmails = autherizedUsers
+            }
+            
         }
     }
     

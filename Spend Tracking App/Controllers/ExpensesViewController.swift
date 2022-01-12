@@ -77,8 +77,11 @@ class ExpensesViewController: UIViewController {
                     self.reloadData()
                     
                     // Scroll to bottom of expenses
-                    let indexPath = IndexPath(row: self.expenses.count - 1, section: 0)
-                    self.tableView.scrollToRow(at: indexPath , at: .top , animated: false)
+                    if(self.expenses.count >= 1){
+                        let indexPath = IndexPath(row: self.expenses.count - 1, section: 0)
+                        self.tableView.scrollToRow(at: indexPath , at: .top , animated: false)
+                    }
+                    
                 }
             }
     }

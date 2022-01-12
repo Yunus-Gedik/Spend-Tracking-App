@@ -12,6 +12,11 @@
 		D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */; };
 		D940AE9827748F7100754F5B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE9727748F7100754F5B /* Expense.swift */; };
 		D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE992774965700754F5B /* ExpenseType.swift */; };
+		D953AAFF278E12E000B7A334 /* ReviewRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AAFE278E12E000B7A334 /* ReviewRequestsViewController.swift */; };
+		D953AB01278E12FC00B7A334 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AB00278E12FC00B7A334 /* ReportViewController.swift */; };
+		D953AB03278E132D00B7A334 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AB02278E132D00B7A334 /* UserListViewController.swift */; };
+		D953AB06278E193F00B7A334 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AB04278E193F00B7A334 /* UserCell.swift */; };
+		D953AB07278E193F00B7A334 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D953AB05278E193F00B7A334 /* UserCell.xib */; };
 		D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9664F46274FE88F00435077 /* GoogleService-Info.plist */; };
 		D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F49274FF22100435077 /* RegisterViewController.swift */; };
 		D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */; };
@@ -44,6 +49,11 @@
 		D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewController.swift; sourceTree = "<group>"; };
 		D940AE9727748F7100754F5B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		D940AE992774965700754F5B /* ExpenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseType.swift; sourceTree = "<group>"; };
+		D953AAFE278E12E000B7A334 /* ReviewRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestsViewController.swift; sourceTree = "<group>"; };
+		D953AB00278E12FC00B7A334 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		D953AB02278E132D00B7A334 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		D953AB04278E193F00B7A334 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		D953AB05278E193F00B7A334 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		D9664F46274FE88F00435077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9664F49274FF22100435077 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D9664F4B274FF23D00435077 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +125,9 @@
 				D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */,
 				D989040F2788407100635BF7 /* TabBarViewController.swift */,
 				D98904112788477800635BF7 /* GroupInfoViewController.swift */,
+				D953AAFE278E12E000B7A334 /* ReviewRequestsViewController.swift */,
+				D953AB00278E12FC00B7A334 /* ReportViewController.swift */,
+				D953AB02278E132D00B7A334 /* UserListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 				D966CA0C2775C01B00F1C35A /* ExpenseCell.xib */,
 				D9F54B762775CA8900888E0D /* GroupCell.swift */,
 				D9F54B772775CA8900888E0D /* GroupCell.xib */,
+				D953AB04278E193F00B7A334 /* UserCell.swift */,
+				D953AB05278E193F00B7A334 /* UserCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +256,7 @@
 				D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */,
 				D966CA0E2775C01B00F1C35A /* ExpenseCell.xib in Resources */,
 				D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */,
+				D953AB07278E193F00B7A334 /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +313,15 @@
 				D9F0232F276081EA0052D640 /* Group.swift in Sources */,
 				D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */,
 				D99020F4275273C700618ABD /* ExpensesViewController.swift in Sources */,
+				D953AB01278E12FC00B7A334 /* ReportViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
 				D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */,
+				D953AB06278E193F00B7A334 /* UserCell.swift in Sources */,
 				D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */,
 				D9F54B782775CA8900888E0D /* GroupCell.swift in Sources */,
 				D9DCA0CD2775EEE500B5FA72 /* JoinGroupViewController.swift in Sources */,
+				D953AAFF278E12E000B7A334 /* ReviewRequestsViewController.swift in Sources */,
 				D9664F4E274FF26100435077 /* GroupsViewController.swift in Sources */,
 				D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */,
 				D98904122788477800635BF7 /* GroupInfoViewController.swift in Sources */,
@@ -313,6 +332,7 @@
 				D940AE9827748F7100754F5B /* Expense.swift in Sources */,
 				D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */,
 				D9664F4A274FF22100435077 /* RegisterViewController.swift in Sources */,
+				D953AB03278E132D00B7A334 /* UserListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
