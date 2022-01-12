@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Loading indicator configuration
         indicator.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         indicator.center = view.center
         self.view.addSubview(indicator)
