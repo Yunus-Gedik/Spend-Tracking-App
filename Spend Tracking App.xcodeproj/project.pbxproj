@@ -38,6 +38,8 @@
 		D9F0232F276081EA0052D640 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0232E276081EA0052D640 /* Group.swift */; };
 		D9F54B782775CA8900888E0D /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F54B762775CA8900888E0D /* GroupCell.swift */; };
 		D9F54B792775CA8900888E0D /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F54B772775CA8900888E0D /* GroupCell.xib */; };
+		D9FBF754278F5D9E00A26944 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBF752278F5D9E00A26944 /* RequestCell.swift */; };
+		D9FBF755278F5D9E00A26944 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF753278F5D9E00A26944 /* RequestCell.xib */; };
 		D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C5C3F7274FE66F00688C55 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		D9F0232E276081EA0052D640 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		D9F54B762775CA8900888E0D /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		D9F54B772775CA8900888E0D /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		D9FBF752278F5D9E00A26944 /* RequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		D9FBF753278F5D9E00A26944 /* RequestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				D9F54B772775CA8900888E0D /* GroupCell.xib */,
 				D953AB04278E193F00B7A334 /* UserCell.swift */,
 				D953AB05278E193F00B7A334 /* UserCell.xib */,
+				D9FBF752278F5D9E00A26944 /* RequestCell.swift */,
+				D9FBF753278F5D9E00A26944 /* RequestCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C5C3FE274FE67000688C55 /* LaunchScreen.storyboard in Resources */,
+				D9FBF755278F5D9E00A26944 /* RequestCell.xib in Resources */,
 				D9F54B792775CA8900888E0D /* GroupCell.xib in Resources */,
 				D9664F47274FE88F00435077 /* GoogleService-Info.plist in Resources */,
 				D9C5C3FB274FE67000688C55 /* Assets.xcassets in Resources */,
@@ -316,6 +323,7 @@
 				D953AB01278E12FC00B7A334 /* ReportViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
+				D9FBF754278F5D9E00A26944 /* RequestCell.swift in Sources */,
 				D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */,
 				D953AB06278E193F00B7A334 /* UserCell.swift in Sources */,
 				D99020F22752702000618ABD /* CreateGroupViewController.swift in Sources */,

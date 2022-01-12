@@ -13,9 +13,11 @@ class ExpensesViewController: UIViewController {
     @IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var addExpenseButton: UIButton!
     
     var expenses: [Expense] = []
     var selectedExpense: Expense?
+    var data: [String: Any]?
     
     // Input
     var groupCode: String?
@@ -51,6 +53,26 @@ class ExpensesViewController: UIViewController {
          }
          }
          */
+        
+        db.collection("group")
+            .whereField("code", isEqualTo: groupCode!)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    let t = querySnapshot!.documents[0]
+                    self.data = t.data()
+                    
+                    if((self.data!["autherizedUsers"] as! [String]) .contains(Auth.auth().currentUser!.email!)){
+                        self.addExpenseButton.isEnabled = true
+                    }
+                    else{
+                        self.addExpenseButton.isEnabled = false
+                    }
+                    
+                }
+            }
+        
         
         db.collection("expense")
             .order(by: "date")

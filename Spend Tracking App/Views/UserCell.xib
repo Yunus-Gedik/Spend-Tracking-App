@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,33 +17,58 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-KI-SBT">
-                        <rect key="frame" x="15" y="10" width="290" height="29"/>
-                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="Button">
-                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                        </buttonConfiguration>
-                        <connections>
-                            <action selector="userButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Hop-IY-cFs"/>
-                        </connections>
-                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwN-TH-IwG">
+                        <rect key="frame" x="15" y="15" width="290" height="31"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-KI-SBT">
+                                <rect key="frame" x="0.0" y="0.0" width="226" height="31"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <backgroundConfiguration key="background" image="square.and.arrow.up" catalog="system"/>
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="userButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Hop-IY-cFs"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6DJ-hu-4dh">
+                                <rect key="frame" x="241" y="0.0" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="H3w-14-s7l"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6DJ-hu-4dh" firstAttribute="centerY" secondItem="OwN-TH-IwG" secondAttribute="centerY" id="If5-QY-vC2"/>
+                            <constraint firstItem="ec7-KI-SBT" firstAttribute="centerY" secondItem="OwN-TH-IwG" secondAttribute="centerY" id="Mif-BO-SJ3"/>
+                            <constraint firstItem="6DJ-hu-4dh" firstAttribute="leading" secondItem="ec7-KI-SBT" secondAttribute="trailing" constant="15" id="VIz-Zp-Brr"/>
+                            <constraint firstAttribute="trailing" secondItem="6DJ-hu-4dh" secondAttribute="trailing" id="bFt-pw-at4"/>
+                            <constraint firstItem="ec7-KI-SBT" firstAttribute="top" secondItem="OwN-TH-IwG" secondAttribute="top" id="j7I-Vl-Pgf"/>
+                            <constraint firstItem="ec7-KI-SBT" firstAttribute="leading" secondItem="OwN-TH-IwG" secondAttribute="leading" id="wz3-tU-5JH"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="ec7-KI-SBT" secondAttribute="bottom" constant="10" id="14R-fg-wWg"/>
-                    <constraint firstItem="ec7-KI-SBT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2xI-JY-i0G"/>
-                    <constraint firstAttribute="trailing" secondItem="ec7-KI-SBT" secondAttribute="trailing" constant="15" id="6hE-wv-R5Z"/>
-                    <constraint firstItem="ec7-KI-SBT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Kd-7M-w7p"/>
-                    <constraint firstItem="ec7-KI-SBT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iuc-mG-uy9"/>
-                    <constraint firstItem="ec7-KI-SBT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ug8-hp-eGs"/>
+                    <constraint firstAttribute="trailing" secondItem="OwN-TH-IwG" secondAttribute="trailing" constant="15" id="7OU-ZW-sHo"/>
+                    <constraint firstItem="OwN-TH-IwG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="BZR-Fn-YEY"/>
+                    <constraint firstItem="OwN-TH-IwG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="a9T-qt-us3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="autherizedSwitch" destination="6DJ-hu-4dh" id="Fdf-yg-n7z"/>
                 <outlet property="userButton" destination="ec7-KI-SBT" id="ArA-fw-MU8"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="131.58482142857142"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

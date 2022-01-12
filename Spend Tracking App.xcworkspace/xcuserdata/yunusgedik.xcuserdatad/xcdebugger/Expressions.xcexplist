@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "UserListViewController.tableView(_:numberOfRowsInSection:):UserListViewController.swift">
+         contextName = "closure #1 in closure #2 in UserListViewController.tableView(_:cellForRowAt:):UserListViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "users.count">
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(Auth.auth().currentUser?.email)! as String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -31,6 +39,20 @@
          <PersistentStrings>
             <PersistentString
                value = "tableView.indexPathForSelectedRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserListViewController.tableView(_:cellForRowAt:):UserListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "users">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "data![&quot;admin&quot;] as! String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -71,10 +93,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
+         contextName = "closure #1 in ReviewRequestsViewController.viewDidLoad():ReviewRequestsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "(Auth.auth().currentUser?.email)! as String">
+               value = "requestEmails.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserListViewController.tableView(_:numberOfRowsInSection:):UserListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "users.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

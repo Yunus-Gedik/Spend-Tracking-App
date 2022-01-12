@@ -38,7 +38,7 @@ class CreateGroupViewController: UIViewController {
                 "code": invitationCode.text!,
                 "joinByCode": byCodeSwitch.isOn,
                 "admin": Auth.auth().currentUser!.email! as String,
-                "autherizedUsers": [String].init(),
+                "autherizedUsers": [(Auth.auth().currentUser?.email)! as String],
                 "users": [(Auth.auth().currentUser?.email)! as String],
                 "requests":[String].init(),
                 "date":Date().timeIntervalSince1970

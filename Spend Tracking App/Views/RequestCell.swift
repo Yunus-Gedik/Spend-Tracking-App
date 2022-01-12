@@ -1,43 +1,54 @@
 //
-//  UserCell.swift
+//  RequestCell.swift
 //  Spend Tracking App
 //
-//  Created by Yunus Gedik on 11.01.2022.
+//  Created by Yunus Gedik on 12.01.2022.
 //
 
 import UIKit
 
-class UserCell: UITableViewCell {
+class RequestCell: UITableViewCell {
 
     @IBOutlet var userButton: UIButton!
-    @IBOutlet var autherizedSwitch: UISwitch!
+    @IBOutlet var denyButton: UIButton!
     
-    // Input
-    var clickEvent: (()->Void)? = nil
-    var switchEvent: (()->Void)? = nil
+    var userInfoEvent: (()->Void)? = nil
+    var denyEvent: (()->Void)? = nil
+    var approveEvent: (()->Void)? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        denyButton.tintColor = .systemRed
         
         // Selected bacground is transparent
         let bgColorView = UIView()
         bgColorView.backgroundColor =  .clear
         self.selectedBackgroundView = bgColorView
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
     
     @IBAction func userButtonClicked(_ sender: UIButton) {
-        if let t = clickEvent{
+        if let t = userInfoEvent{
             t()
         }
     }
     
-    @IBAction func switchChanged(_ sender: UISwitch) {
-        if let t = switchEvent{
+    @IBAction func denyClicked(_ sender: UIButton) {
+        if let t = denyEvent{
             t()
         }
     }
+    
+    @IBAction func approveClicked(_ sender: UIButton) {
+        if let t = approveEvent{
+            t()
+        }
+    }
+    
 }

@@ -16,7 +16,7 @@ class GroupCell: UITableViewCell {
         super.awakeFromNib()
         
         view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.borderColor = UIColor.darkGray.cgColor
         view.layer.cornerRadius = 20
         view.layer.masksToBounds = true;
     }
