@@ -9,24 +9,32 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    var indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        indicator.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        indicator.center = view.center
+        self.view.addSubview(indicator)
+        self.view.bringSubviewToFront(indicator)
     }
-
+    
     @IBAction func loginClicked(_ sender: UIButton) {
         
         if let email = emailField.text, let password = passwordField.text{
+            indicator.startAnimating()
             Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
                 if let e = error {
                     print(e.localizedDescription);
                 }
                 else{
+                    self.indicator.stopAnimating()
                     self.performSegue(withIdentifier: "loginSuccess", sender: self)
                 }
             }
