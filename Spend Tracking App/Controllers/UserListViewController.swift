@@ -24,6 +24,14 @@ class UserListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(isAll! == true){
+            title = "All Users"
+        }
+        else{
+            title = "Autherized Users"
+        }
+        
         tableView.dataSource = self
         tableView.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "userCell")
         tableView.rowHeight = 50.0

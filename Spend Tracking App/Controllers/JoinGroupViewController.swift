@@ -16,6 +16,8 @@ class JoinGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Join a Group"
+        
     }
     
     @IBAction func joinGroupClicked(_ sender: UIButton) {

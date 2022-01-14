@@ -74,7 +74,7 @@ class ExpensesViewController: UIViewController {
             }
         
         
-        db.collection("expense")
+        db.collection("expense_" + groupCode!)
             .order(by: "date")
             .addSnapshotListener() { (querySnapshot, err) in
                 if let err = err {
@@ -84,16 +84,14 @@ class ExpensesViewController: UIViewController {
                     var tempAmount: Float = 0.0
                     for document in querySnapshot!.documents {
                         let data = document.data()
-                        if(data["group"] as! String == self.groupCode!){
-                            let expense = Expense(name: data["name"] as! String,
-                                                  amount: Float(String(format:"%.2f", data["amount"] as! Float))!,
-                                                  spender: data["spender"] as! String,
-                                                  type: ExpenseType(rawValue: (data["type"] as! String))!,
-                                                  group: data["group"] as! String,
-                                                  date: data["date"] as! NSNumber)
-                            tempAmount += expense.amount
-                            self.expenses.append(expense)
-                        }
+                        let expense = Expense(name: data["name"] as! String,
+                                              amount: Float(String(format:"%.2f", data["amount"] as! Float))!,
+                                              spender: data["spender"] as! String,
+                                              type: ExpenseType(rawValue: (data["type"] as! String))!,
+                                              date: data["date"] as! NSNumber)
+                        tempAmount += expense.amount
+                        self.expenses.append(expense)
+                        
                     }
                     self.amountLabel.text = String(format:"%.2f", tempAmount)
                     self.reloadData()
@@ -143,6 +141,7 @@ extension ExpensesViewController: UITableViewDataSource {
         if let timeResult = (expenses[indexPath.row].date as? Double) {
             let date = Date(timeIntervalSince1970: timeResult)
             let dateFormatter = DateFormatter()
+            //dateFormatter.locale = = Locale.init(identifier: Locale.preferredLanguages.first!)
             dateFormatter.timeStyle = .none //Set time style
             dateFormatter.dateStyle = .medium //Set date style
             dateFormatter.timeZone = .current

@@ -83,12 +83,11 @@ class AddExpenseViewController: UIViewController {
     @IBAction func addExpenseClicked(_ sender: UIButton) {
         if(expenseNameTextField.text != nil && amountTextField.text != nil){
             var ref: DocumentReference? = nil
-            ref = db.collection("expense").addDocument(data: [
+            ref = db.collection("expense_" + groupCode!).addDocument(data: [
                 "name": expenseNameTextField.text!,
                 "amount": Float(String(format:"%.2f", amountTextField.text!.doubleValue))!,
                 "spender": Auth.auth().currentUser!.email! as String,
                 "type": currentSwitch!.rawValue,
-                "group": groupCode!,
                 "date":Date().timeIntervalSince1970
             ]) { err in
                 if let err = err {

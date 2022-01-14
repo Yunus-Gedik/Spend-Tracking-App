@@ -24,6 +24,8 @@ class ReviewRequestsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Requests"
+        
         tableView.dataSource = self
         tableView.register(UINib(nibName: "RequestCell", bundle: nil), forCellReuseIdentifier: "requestCell")
         tableView.rowHeight = 50.0

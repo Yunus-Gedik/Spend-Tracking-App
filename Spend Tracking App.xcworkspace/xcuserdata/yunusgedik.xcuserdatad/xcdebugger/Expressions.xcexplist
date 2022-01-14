@@ -11,10 +11,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
+         contextName = "UserListViewController.tableView(_:numberOfRowsInSection:):UserListViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "(Auth.auth().currentUser?.email)! as String">
+               value = "users.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -31,6 +31,20 @@
          <PersistentStrings>
             <PersistentString
                value = "self.distancetoButtons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ReportViewController.viewDidLoad():ReportViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.spents.getColumn(column: 1).contains(data[&quot;spender&quot;] as! String)">
+            </PersistentString>
+            <PersistentString
+               value = "data[&quot;spender&quot;] as! String">
+            </PersistentString>
+            <PersistentString
+               value = "self.spents.getColumn(column: 1)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -85,6 +99,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #2 in ExpensesViewController.viewDidLoad():ExpensesViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "GroupsViewController.prepare(for:sender:):GroupsViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -101,10 +118,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UserListViewController.tableView(_:numberOfRowsInSection:):UserListViewController.swift">
+         contextName = "GroupsViewController.viewDidLoad():GroupsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "users.count">
+               value = "(Auth.auth().currentUser?.email)! as String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

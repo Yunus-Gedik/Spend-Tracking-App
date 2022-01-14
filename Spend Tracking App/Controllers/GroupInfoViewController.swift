@@ -19,15 +19,15 @@ class GroupInfoViewController: UIViewController {
     
     @IBOutlet var createReportButton: UIButton!
     @IBOutlet var reviewJoinRequestsButton: UIButton!
-
+    
     var adminEmail: String?
     var allClicked: Bool?
     
     let db = Firestore.firestore()
-
+    
     // Input
     var groupCode: String?
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class GroupInfoViewController: UIViewController {
                     if(self.adminEmail! != Auth.auth().currentUser?.email!){
                         self.createReportButton.isHidden = true
                         self.reviewJoinRequestsButton.isHidden = true
-                        self.joinByCodeSwitch.isHidden = true
+                        self.joinByCodeSwitch.isEnabled = false
                     }
                     
                     var localDate: String?
@@ -90,8 +90,50 @@ class GroupInfoViewController: UIViewController {
         performSegue(withIdentifier: "goReviewRequests", sender: self)
     }
     
-    @IBAction func createReportClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "goReport", sender: self)
+    @IBAction func createReportClicked(_ sender: UIButton){
+        Task{
+            do{
+                let ss = try await db.collection("expense_" + groupCode!).getDocuments()
+                if(ss.documents.count != 0){
+                    // Delete all expenses of the previous report
+                    do{
+                        let oldReport = try await self.db.collection("expense_report_" + self.groupCode!).getDocuments()
+                        if(oldReport.documents.count != 0){
+                            for doc in oldReport.documents{
+                                try await self.db.collection("expense_report_" + self.groupCode!).document("\(doc.documentID)").delete()
+                            }
+                        }
+                    }catch{
+                        print("DELETE PREVIOUS REPORT COLLECTION ERRRRRRRRRRRRRRROOOOOOOOOORRRR")
+                    }
+                    
+                    for document in ss.documents{
+                        let data = document.data()
+                        
+                        // Insert new report spents to report collection
+                        self.db.collection("expense_report_" + self.groupCode!).addDocument(data: [
+                            "name": data["name"]!,
+                            "amount": data["amount"]!,
+                            "spender": data["spender"]!,
+                            "type": data["type"]!,
+                            "date": data["date"]!
+                        ])
+                        
+                        // Delete expense from current expenses
+                        do{
+                            try await self.db.collection("expense_" + self.groupCode!).document("\(document.documentID)").delete()
+                        }catch{
+                            print("DELETE EXPENSE FROM CURRENT EXPENSES ERRRRRRRRRRRRRRROOOOOOOOOORRRR")
+                        }
+                    }
+                }
+                
+                
+            }catch{
+                print("CREATE REPORT BAŞTAN KOKAR ERROR")
+            }
+            performSegue(withIdentifier: "goReport", sender: self)
+        } 
     }
     
     @IBAction func allUsersClicked(_ sender: UIButton) {
@@ -142,7 +184,7 @@ class GroupInfoViewController: UIViewController {
         }
         else if(segue.identifier == "goReport"){
             let obj = segue.destination as! ReportViewController
-            //obj.groupCode = groupCode!
+            obj.groupCode = groupCode!
         }
         else if(segue.identifier == "goUserList"){
             let obj = segue.destination as! UserListViewController

@@ -1,0 +1,351 @@
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "0aa-gT-2Rv"; */
+"0aa-gT-2Rv.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Desc"; ObjectID = "27b-Ey-sqe"; */
+"27b-Ey-sqe.text" = "Desc";
+
+/* Class = "UIButton"; configuration.title = "Create Group"; ObjectID = "3ts-AA-7ow"; */
+"3ts-AA-7ow.configuration.title" = "Create Group";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3ts-AA-7ow"; */
+"3ts-AA-7ow.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Group Information"; ObjectID = "45m-W4-27R"; */
+"45m-W4-27R.title" = "Group Information";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "4K8-JR-yXj"; */
+"4K8-JR-yXj.text" = "Amount";
+
+/* Class = "UILabel"; text = "Expense Name"; ObjectID = "4u2-bt-rPz"; */
+"4u2-bt-rPz.text" = "Expense Name";
+
+/* Class = "UIButton"; configuration.title = "Last Report of Group"; ObjectID = "5hV-DB-D92"; */
+"5hV-DB-D92.configuration.title" = "Last Report of Group";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "6Wo-f7-C7N"; */
+"6Wo-f7-C7N.text" = "Date";
+
+/* Class = "UILabel"; text = "E-Mail"; ObjectID = "71F-JQ-8dp"; */
+"71F-JQ-8dp.text" = "E-Mail";
+
+/* Class = "UIButton"; configuration.title = "Select"; ObjectID = "7QY-J4-1VC"; */
+"7QY-J4-1VC.configuration.title" = "Select";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7QY-J4-1VC"; */
+"7QY-J4-1VC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "7hF-ye-Fkn"; */
+"7hF-ye-Fkn.text" = "Total Amount";
+
+/* Class = "UILabel"; text = "Begin Date"; ObjectID = "7jX-aK-2kL"; */
+"7jX-aK-2kL.text" = "Begin Date";
+
+/* Class = "UITextField"; placeholder = "Group Code"; ObjectID = "7mt-S2-h0Q"; */
+"7mt-S2-h0Q.placeholder" = "Group Code";
+
+/* Class = "UIButton"; configuration.title = "Select"; ObjectID = "9kQ-ca-e1y"; */
+"9kQ-ca-e1y.configuration.title" = "Select";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9kQ-ca-e1y"; */
+"9kQ-ca-e1y.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Join Directly by Code"; ObjectID = "COT-3H-Q8y"; */
+"COT-3H-Q8y.text" = "Join Directly by Code";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "CeF-lE-j9Z"; */
+"CeF-lE-j9Z.text" = "Type";
+
+/* Class = "UINavigationItem"; title = "Create Group"; ObjectID = "DYB-U7-OYw"; */
+"DYB-U7-OYw.title" = "Create Group";
+
+/* Class = "UIButton"; configuration.title = "Create Personal Balance Sheet"; ObjectID = "DYK-BF-orU"; */
+"DYK-BF-orU.configuration.title" = "Create Personal Balance Sheet";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DYK-BF-orU"; */
+"DYK-BF-orU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Da6-z4-sEl"; */
+"Da6-z4-sEl.text" = "Description";
+
+/* Class = "UILabel"; text = "Group Name"; ObjectID = "E0m-QS-nTB"; */
+"E0m-QS-nTB.text" = "Group Name";
+
+/* Class = "UINavigationItem"; title = "Report"; ObjectID = "He0-kw-ToD"; */
+"He0-kw-ToD.title" = "Report";
+
+/* Class = "UILabel"; text = "User"; ObjectID = "ICk-l5-0en"; */
+"ICk-l5-0en.text" = "User";
+
+/* Class = "UILabel"; text = "Surname"; ObjectID = "IQg-ze-ZDL"; */
+"IQg-ze-ZDL.text" = "Surname";
+
+/* Class = "UIButton"; configuration.title = "All Users"; ObjectID = "IsE-SD-u1P"; */
+"IsE-SD-u1P.configuration.title" = "All Users";
+
+/* Class = "UIButton"; configuration.title = "Autherized Users"; ObjectID = "JZm-5M-F1W"; */
+"JZm-5M-F1W.configuration.title" = "Autherized Users";
+
+/* Class = "UILabel"; text = "Registration Date"; ObjectID = "KWC-7M-khU"; */
+"KWC-7M-khU.text" = "Registration Date";
+
+/* Class = "UIButton"; configuration.title = "Admin"; ObjectID = "KaG-Vl-lrB"; */
+"KaG-Vl-lrB.configuration.title" = "Admin";
+
+/* Class = "UIButton"; configuration.title = "Forgot Password?"; ObjectID = "LMV-QR-ukT"; */
+"LMV-QR-ukT.configuration.title" = "Forgot Password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LMV-QR-ukT"; */
+"LMV-QR-ukT.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Group Name"; ObjectID = "LqY-62-kvc"; */
+"LqY-62-kvc.placeholder" = "Group Name";
+
+/* Class = "UIBarButtonItem"; title = "Profile"; ObjectID = "M6U-9x-ap0"; */
+"M6U-9x-ap0.title" = "Profile";
+
+/* Class = "UINavigationItem"; title = "Add Expense"; ObjectID = "MMZ-18-u4w"; */
+"MMZ-18-u4w.title" = "Add Expense";
+
+/* Class = "UILabel"; text = "Event"; ObjectID = "MXx-5m-q9j"; */
+"MXx-5m-q9j.text" = "Event";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "Mj8-Ib-wdU"; */
+"Mj8-Ib-wdU.text" = "Type";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "Ncr-Hq-v34"; */
+"Ncr-Hq-v34.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ncr-Hq-v34"; */
+"Ncr-Hq-v34.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NsY-SM-tbP"; */
+"NsY-SM-tbP.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "O21-rf-bgz"; */
+"O21-rf-bgz.text" = "Name";
+
+/* Class = "UILabel"; text = "💸 Expense Sharing App"; ObjectID = "Qbi-FL-xwD"; */
+"Qbi-FL-xwD.text" = "💸 Expense Sharing App";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "RHv-IU-N6D"; */
+"RHv-IU-N6D.text" = "Description";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "Rd5-5z-dpL"; */
+"Rd5-5z-dpL.placeholder" = "Phone";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Rkm-91-Tko"; */
+"Rkm-91-Tko.text" = "0";
+
+/* Class = "UILabel"; text = "Authority"; ObjectID = "SAh-cc-IMS"; */
+"SAh-cc-IMS.text" = "Authority";
+
+/* Class = "UIButton"; configuration.title = "Join Group"; ObjectID = "T4e-r7-g5F"; */
+"T4e-r7-g5F.configuration.title" = "Join Group";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "T4e-r7-g5F"; */
+"T4e-r7-g5F.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Review Join Requests"; ObjectID = "Tce-n1-oos"; */
+"Tce-n1-oos.configuration.title" = "Review Join Requests";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tce-n1-oos"; */
+"Tce-n1-oos.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Spender"; ObjectID = "UWr-WH-OOe"; */
+"UWr-WH-OOe.configuration.title" = "Spender";
+
+/* Class = "UIButton"; configuration.title = "Add Expense"; ObjectID = "Uig-Dw-Kdo"; */
+"Uig-Dw-Kdo.configuration.title" = "Add Expense";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Uig-Dw-Kdo"; */
+"Uig-Dw-Kdo.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Join a Group"; ObjectID = "UsM-Bv-N9k"; */
+"UsM-Bv-N9k.configuration.title" = "Join a Group";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UsM-Bv-N9k"; */
+"UsM-Bv-N9k.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "Uwh-dO-jqZ"; */
+"Uwh-dO-jqZ.placeholder" = "E-Mail";
+
+/* Class = "UILabel"; text = "Invitation Code"; ObjectID = "VsI-mk-MSl"; */
+"VsI-mk-MSl.text" = "Invitation Code";
+
+/* Class = "UILabel"; text = "End Date"; ObjectID = "Vu8-JZ-PD1"; */
+"Vu8-JZ-PD1.text" = "End Date";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "WfI-6A-UhB"; */
+"WfI-6A-UhB.text" = "Password";
+
+/* Class = "UITabBarItem"; title = "Expenses"; ObjectID = "Wqu-2Z-Agj"; */
+"Wqu-2Z-Agj.title" = "Expenses";
+
+/* Class = "UIButton"; configuration.title = "Create Report"; ObjectID = "XJQ-HZ-wq5"; */
+"XJQ-HZ-wq5.configuration.title" = "Create Report";
+
+/* Class = "UILabel"; text = "Other"; ObjectID = "XgS-Ma-4HT"; */
+"XgS-Ma-4HT.text" = "Other";
+
+/* Class = "UILabel"; text = "Who spent how much?"; ObjectID = "Xvo-0Q-cod"; */
+"Xvo-0Q-cod.text" = "Who spent how much?";
+
+/* Class = "UIBarButtonItem"; title = "Log Out"; ObjectID = "ZB9-ks-JOH"; */
+"ZB9-ks-JOH.title" = "Log Out";
+
+/* Class = "UILabel"; text = "Per Capita Wages"; ObjectID = "ZNv-qm-S2p"; */
+"ZNv-qm-S2p.text" = "Per Capita Wages";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "Zl5-Uz-6tf"; */
+"Zl5-Uz-6tf.text" = "Amount";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "add-HW-CYv"; */
+"add-HW-CYv.text" = "Name";
+
+/* Class = "UILabel"; text = "Food"; ObjectID = "anI-H3-sFJ"; */
+"anI-H3-sFJ.text" = "Food";
+
+/* Class = "UIButton"; configuration.title = "Create Personal Balance Sheet"; ObjectID = "bF6-SQ-7Gf"; */
+"bF6-SQ-7Gf.configuration.title" = "Create Personal Balance Sheet";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bF6-SQ-7Gf"; */
+"bF6-SQ-7Gf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Code"; ObjectID = "bpJ-3v-KSX"; */
+"bpJ-3v-KSX.text" = "Code";
+
+/* Class = "UITextField"; placeholder = "Amount"; ObjectID = "bqM-b7-7bT"; */
+"bqM-b7-7bT.placeholder" = "Amount";
+
+/* Class = "UILabel"; text = "E-Mail"; ObjectID = "c8b-NI-s7Q"; */
+"c8b-NI-s7Q.text" = "E-Mail";
+
+/* Class = "UINavigationItem"; title = "Groups"; ObjectID = "d0g-5I-kBm"; */
+"d0g-5I-kBm.title" = "Groups";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "d5t-BZ-3ax"; */
+"d5t-BZ-3ax.placeholder" = "E-Mail";
+
+/* Class = "UITextField"; text = "gdkyns@gmail.com"; ObjectID = "d5t-BZ-3ax"; */
+"d5t-BZ-3ax.text" = "gdkyns@gmail.com";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "eti-Rm-uwJ"; */
+"eti-Rm-uwJ.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Expense Name"; ObjectID = "ezc-bE-4VS"; */
+"ezc-bE-4VS.placeholder" = "Expense Name";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "fCE-NE-PXD"; */
+"fCE-NE-PXD.text" = "Date";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "fPN-VQ-WDA"; */
+"fPN-VQ-WDA.text" = "Amount";
+
+/* Class = "UILabel"; text = "Expense Type"; ObjectID = "fR3-hl-8P8"; */
+"fR3-hl-8P8.text" = "Expense Type";
+
+/* Class = "UILabel"; text = "Creation Date"; ObjectID = "fqk-Dz-3yA"; */
+"fqk-Dz-3yA.text" = "Creation Date";
+
+/* Class = "UILabel"; text = "Group Code:"; ObjectID = "hMO-HX-3Iy"; */
+"hMO-HX-3Iy.text" = "Group Code:";
+
+/* Class = "UILabel"; text = "All Expenses"; ObjectID = "haI-At-eBw"; */
+"haI-At-eBw.text" = "All Expenses";
+
+/* Class = "UILabel"; text = "Join Directly by Code"; ObjectID = "hi4-fv-snN"; */
+"hi4-fv-snN.text" = "Join Directly by Code";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "hx4-Um-dYu"; */
+"hx4-Um-dYu.placeholder" = "Description";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "ixR-Ha-FPy"; */
+"ixR-Ha-FPy.placeholder" = "E-Mail";
+
+/* Class = "UILabel"; text = "Group Name"; ObjectID = "kcm-UV-5AR"; */
+"kcm-UV-5AR.text" = "Group Name";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "l9h-cF-0xn"; */
+"l9h-cF-0xn.title" = "Profile";
+
+/* Class = "UILabel"; text = "E-Mail"; ObjectID = "lRE-aT-8xI"; */
+"lRE-aT-8xI.text" = "E-Mail";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "lVI-M8-90B"; */
+"lVI-M8-90B.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "123456"; ObjectID = "lVI-M8-90B"; */
+"lVI-M8-90B.text" = "123456";
+
+/* Class = "UILabel"; text = "Invitation Code"; ObjectID = "la6-vg-seD"; */
+"la6-vg-seD.text" = "Invitation Code";
+
+/* Class = "UILabel"; text = "Luxury"; ObjectID = "lwt-Lf-uIE"; */
+"lwt-Lf-uIE.text" = "Luxury";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "m2z-CY-VM1"; */
+"m2z-CY-VM1.text" = "Date";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "mkv-cU-jgq"; */
+"mkv-cU-jgq.text" = "Phone";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "n4Z-PO-Dw1"; */
+"n4Z-PO-Dw1.text" = "Date";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "oMR-th-KGj"; */
+"oMR-th-KGj.text" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "qCw-NZ-m2P"; */
+"qCw-NZ-m2P.configuration.title" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qCw-NZ-m2P"; */
+"qCw-NZ-m2P.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Register"; ObjectID = "r2n-dh-U7v"; */
+"r2n-dh-U7v.title" = "Register";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "rOO-M7-nSA"; */
+"rOO-M7-nSA.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "tF1-co-TqQ"; */
+"tF1-co-TqQ.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Spender"; ObjectID = "teU-aM-LXq"; */
+"teU-aM-LXq.text" = "Spender";
+
+/* Class = "UILabel"; text = "E-Mail"; ObjectID = "tfR-C8-8R3"; */
+"tfR-C8-8R3.text" = "E-Mail";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "ttS-fK-l85"; */
+"ttS-fK-l85.text" = "Total Amount";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "v1N-RM-KM3"; */
+"v1N-RM-KM3.text" = "Phone";
+
+/* Class = "UILabel"; text = "Rent"; ObjectID = "vHd-wF-eYE"; */
+"vHd-wF-eYE.text" = "Rent";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "xBY-oQ-SG0"; */
+"xBY-oQ-SG0.text" = "label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xHB-vM-zQc"; */
+"xHB-vM-zQc.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Create an Account"; ObjectID = "xv6-HO-RQq"; */
+"xv6-HO-RQq.configuration.title" = "Create an Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xv6-HO-RQq"; */
+"xv6-HO-RQq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "yOK-ed-TRO"; */
+"yOK-ed-TRO.text" = "Name";
+
+/* Class = "UIButton"; configuration.title = "Send Reset E-Mail"; ObjectID = "ymZ-GT-pz8"; */
+"ymZ-GT-pz8.configuration.title" = "Send Reset E-Mail";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ymZ-GT-pz8"; */
+"ymZ-GT-pz8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Group Admin"; ObjectID = "ymb-Vh-hWi"; */
+"ymb-Vh-hWi.text" = "Group Admin";

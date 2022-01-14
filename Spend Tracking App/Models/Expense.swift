@@ -12,6 +12,5 @@ struct Expense{
     let amount: Float
     let spender: String
     let type: ExpenseType
-    let group: String
     let date: NSNumber
 }

@@ -10,6 +10,8 @@
 		A85A952352AB2967401BBC58 /* Pods_Spend_Tracking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408220966765C6DE9B963910 /* Pods_Spend_Tracking_App.framework */; };
 		D91467882752A5EA00355EEB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91467872752A5EA00355EEB /* PopUpViewController.swift */; };
 		D924A4782785071600F49F65 /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */; };
+		D936F948279084FE00DA6086 /* SpentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D936F946279084FE00DA6086 /* SpentCell.swift */; };
+		D936F949279084FE00DA6086 /* SpentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D936F947279084FE00DA6086 /* SpentCell.xib */; };
 		D940AE9827748F7100754F5B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE9727748F7100754F5B /* Expense.swift */; };
 		D940AE9A2774965700754F5B /* ExpenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940AE992774965700754F5B /* ExpenseType.swift */; };
 		D953AAFF278E12E000B7A334 /* ReviewRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AAFE278E12E000B7A334 /* ReviewRequestsViewController.swift */; };
@@ -48,7 +50,11 @@
 		459C95F2FCBA1D0F416788F8 /* Pods-Spend Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.debug.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8DC77C24B3267DED58F92E /* Pods-Spend Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spend Tracking App.release.xcconfig"; path = "Target Support Files/Pods-Spend Tracking App/Pods-Spend Tracking App.release.xcconfig"; sourceTree = "<group>"; };
 		D91467872752A5EA00355EEB /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D91717622790EDCF00A503F3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
+		D91717632790EDCF00A503F3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D924A4772785071600F49F65 /* ExpenseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewController.swift; sourceTree = "<group>"; };
+		D936F946279084FE00DA6086 /* SpentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentCell.swift; sourceTree = "<group>"; };
+		D936F947279084FE00DA6086 /* SpentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpentCell.xib; sourceTree = "<group>"; };
 		D940AE9727748F7100754F5B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		D940AE992774965700754F5B /* ExpenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseType.swift; sourceTree = "<group>"; };
 		D953AAFE278E12E000B7A334 /* ReviewRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestsViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 				D953AB05278E193F00B7A334 /* UserCell.xib */,
 				D9FBF752278F5D9E00A26944 /* RequestCell.swift */,
 				D9FBF753278F5D9E00A26944 /* RequestCell.xib */,
+				D936F946279084FE00DA6086 /* SpentCell.swift */,
+				D936F947279084FE00DA6086 /* SpentCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = D9C5C3E5274FE66F00688C55;
 			productRefGroup = D9C5C3EF274FE66F00688C55 /* Products */;
@@ -264,6 +273,7 @@
 				D966CA0E2775C01B00F1C35A /* ExpenseCell.xib in Resources */,
 				D9FCD01127751D2200C535B0 /* Main.storyboard in Resources */,
 				D953AB07278E193F00B7A334 /* UserCell.xib in Resources */,
+				D936F949279084FE00DA6086 /* SpentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +330,7 @@
 				D9F0232F276081EA0052D640 /* Group.swift in Sources */,
 				D9D398D927727956007175F5 /* AddExpenseViewController.swift in Sources */,
 				D99020F4275273C700618ABD /* ExpensesViewController.swift in Sources */,
+				D936F948279084FE00DA6086 /* SpentCell.swift in Sources */,
 				D953AB01278E12FC00B7A334 /* ReportViewController.swift in Sources */,
 				D9C5C3F6274FE66F00688C55 /* ViewController.swift in Sources */,
 				D9664F4C274FF23D00435077 /* ForgotPasswordViewController.swift in Sources */,
@@ -351,6 +362,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D9C5C3F8274FE66F00688C55 /* Base */,
+				D91717622790EDCF00A503F3 /* en-GB */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -359,6 +371,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D9C5C3FD274FE67000688C55 /* Base */,
+				D91717632790EDCF00A503F3 /* en-GB */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -370,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -432,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -509,7 +524,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -538,7 +553,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

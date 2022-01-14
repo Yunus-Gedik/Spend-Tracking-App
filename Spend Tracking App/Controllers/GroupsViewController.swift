@@ -51,22 +51,24 @@ class GroupsViewController: UIViewController {
                     print("Error getting documents: \(err)")
                 } else {
                     self.groups.removeAll()
-                    for document in querySnapshot!.documents {
-                        let data = document.data()
-                        if((data["users"] as! Array<String>).contains((Auth.auth().currentUser?.email)! as String)){
-                            let group = Group(code: data["code"] as! String,
-                                              admin: data["admin"] as! String,
-                                              name: data["name"] as! String,
-                                              description: data["description"] as! String,
-                                              joinByCode: data["joinByCode"] as! Bool,
-                                              users: data["users"] as! [String],
-                                              autherizedUsers: data["autherizedUsers"] as! [String],
-                                              requests: data["requests"] as! [String],
-                                              date: data["date"] as! NSNumber)
-                            self.groups.append(group)
+                    if(querySnapshot!.documents.count != 0){
+                        for document in querySnapshot!.documents {
+                            let data = document.data()
+                            if((data["users"] as! Array<String>).contains((Auth.auth().currentUser?.email)! as String)){
+                                let group = Group(code: data["code"] as! String,
+                                                  admin: data["admin"] as! String,
+                                                  name: data["name"] as! String,
+                                                  description: data["description"] as! String,
+                                                  joinByCode: data["joinByCode"] as! Bool,
+                                                  users: data["users"] as! [String],
+                                                  autherizedUsers: data["autherizedUsers"] as! [String],
+                                                  requests: data["requests"] as! [String],
+                                                  date: data["date"] as! NSNumber)
+                                self.groups.append(group)
+                            }
                         }
+                        self.reloadData()
                     }
-                    self.reloadData()
                 }
             }
     }
@@ -74,11 +76,7 @@ class GroupsViewController: UIViewController {
     @IBAction func profileClicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "goProfile", sender: self)
     }
-    
-    @IBAction func createGroupClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "createGroup", sender: self)
-    }
-    
+        
     @IBAction func createPersonalBalanceSheetClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "popUp", sender: self)
         

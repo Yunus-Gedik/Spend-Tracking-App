@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 class CreateGroupViewController: UIViewController {
-
+    
     @IBOutlet weak var invitationCode: UILabel!
     @IBOutlet weak var groupName: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -20,9 +20,18 @@ class CreateGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        invitationCode.text = randomString(length: 6)
+        // Be sure group code is unique
+        Task{
+            let code = randomString(length: 6)
+            while(invitationCode.text == "label"){
+                let doc = try await db.collection("group").whereField("code", isEqualTo: code).getDocuments()
+                if(doc.documents.count == 0){
+                    self.invitationCode.text = code
+                }
+            }
+        }
     }
-
+    
     func randomString(length: Int) -> String {
         let letters = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789"
         return String((0..<length).map{ _ in letters.randomElement()! })
