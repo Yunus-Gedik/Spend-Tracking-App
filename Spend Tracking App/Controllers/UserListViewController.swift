@@ -74,8 +74,6 @@ class UserListViewController: UIViewController {
                         }
                 }
             }
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -84,7 +82,6 @@ class UserListViewController: UIViewController {
             obj.user = selectedUser[0]
         }
     }
-    
 }
 
 

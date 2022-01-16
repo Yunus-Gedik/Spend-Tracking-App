@@ -22,12 +22,14 @@ class AddExpenseViewController: UIViewController {
     // Input
     var groupCode: String?
     
+    var indicator: Indicator!
     
     let db = Firestore.firestore()
     var currentSwitch: ExpenseType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        indicator = Indicator(self.view)
     }
     
     @IBAction func foodSwitchValueChanged(_ sender: UISwitch) {
@@ -83,6 +85,8 @@ class AddExpenseViewController: UIViewController {
     @IBAction func addExpenseClicked(_ sender: UIButton) {
         if(expenseNameTextField.text != nil && amountTextField.text != nil){
             var ref: DocumentReference? = nil
+            
+            indicator.start()
             ref = db.collection("expense_" + groupCode!).addDocument(data: [
                 "name": expenseNameTextField.text!,
                 "amount": Float(String(format:"%.2f", amountTextField.text!.doubleValue))!,
@@ -94,6 +98,7 @@ class AddExpenseViewController: UIViewController {
                     print("Error adding document: \(err)")
                 } else {
                     print("Document added with ID: \(ref!.documentID)")
+                    self.indicator.stop()
                     self.navigationController?.popViewController(animated: true);
                 }
             }

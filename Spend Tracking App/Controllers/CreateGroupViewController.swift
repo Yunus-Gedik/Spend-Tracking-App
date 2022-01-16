@@ -16,10 +16,15 @@ class CreateGroupViewController: UIViewController {
     @IBOutlet weak var byCodeSwitch: UISwitch!
     @IBOutlet weak var byCodeLabel: UILabel!
     
+    var indicator: Indicator!
+    
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        indicator = Indicator(self.view)
+        
         // Be sure group code is unique
         Task{
             let code = randomString(length: 6)
@@ -41,6 +46,7 @@ class CreateGroupViewController: UIViewController {
         
         if(groupName.text != nil){
             var ref: DocumentReference? = nil
+            indicator.start()
             ref = db.collection("group").addDocument(data: [
                 "name": groupName.text!,
                 "description": descriptionTextField.text!,
@@ -54,8 +60,10 @@ class CreateGroupViewController: UIViewController {
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
+                    self.indicator.stop()
                 } else {
                     print("Document added with ID: \(ref!.documentID)")
+                    self.indicator.stop()
                     self.navigationController?.popViewController(animated: true);
                 }
             }

@@ -10,24 +10,31 @@ import Firebase
 
 class JoinGroupViewController: UIViewController {
     
-    let db = Firestore.firestore()
-    
     @IBOutlet weak var groupCode: UITextField!
+    
+    var indicator: Indicator!
+    
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        indicator = Indicator(self.view)
+        
         title = "Join a Group"
         
     }
     
     @IBAction func joinGroupClicked(_ sender: UIButton) {
+        self.indicator.start()
         db.collection("group")
             .whereField("code", isEqualTo: groupCode.text!)
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
+                    self.indicator.stop()
                 } else if querySnapshot!.documents.count != 1 {
-                    print("SAME CODE FOR MORE THAN ONE GROUP!!!");
+                    print("SAME CODE FOR MORE THAN ONE GROUP!!!")
+                    self.indicator.stop()
                 } else {
                     let document = querySnapshot!.documents.first
                     let data = document!.data()
@@ -48,6 +55,7 @@ class JoinGroupViewController: UIViewController {
                             "requests": requests
                         ])
                     }
+                    self.indicator.stop()
                     self.navigationController?.popViewController(animated: true)
                 }
             }

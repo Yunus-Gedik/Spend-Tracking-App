@@ -94,7 +94,7 @@ class ExpensesViewController: UIViewController {
                         
                     }
                     self.amountLabel.text = String(format:"%.2f", tempAmount)
-                    self.reloadData()
+                    self.tableView.reloadData()
                     
                     // Scroll to bottom of expenses
                     if(self.expenses.count >= 1){
@@ -119,10 +119,6 @@ class ExpensesViewController: UIViewController {
             let obj = segue.destination as! ExpenseDetailViewController
             obj.expense = selectedExpense
         }
-    }
-    
-    func reloadData(){
-        self.tableView.reloadData()
     }
 }
 

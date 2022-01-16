@@ -12,22 +12,23 @@ class GroupsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let db = Firestore.firestore()
-    
     var groups: [Group] = []
     var selectedGroup: Group?
     
+    var indicator: Indicator!
+    
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        indicator = Indicator(self.view)
+        
         navigationItem.hidesBackButton = true
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         tableView.register(UINib(nibName: "GroupCell", bundle: nil), forCellReuseIdentifier: "groupCell")
-        
-        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        
         tableView.rowHeight = 60.0
         
         
@@ -47,6 +48,7 @@ class GroupsViewController: UIViewController {
         
         db.collection("group").order(by: "date")
             .addSnapshotListener { (querySnapshot, err) in
+                self.indicator.start()
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {
@@ -70,6 +72,7 @@ class GroupsViewController: UIViewController {
                         self.reloadData()
                     }
                 }
+                self.indicator.stop()
             }
     }
     
@@ -79,16 +82,6 @@ class GroupsViewController: UIViewController {
         
     @IBAction func createPersonalBalanceSheetClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "popUp", sender: self)
-        
-        db.collection("users").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                }
-            }
-        }
     }
     
     

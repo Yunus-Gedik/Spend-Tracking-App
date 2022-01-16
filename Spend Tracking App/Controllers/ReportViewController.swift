@@ -40,7 +40,7 @@ class ReportViewController: UIViewController {
         
         
         spentTableView.register(UINib(nibName: "SpentCell", bundle: nil), forCellReuseIdentifier: "spentCell")
-        spentTableView.rowHeight = 60.0
+        spentTableView.rowHeight = 55.0
         spentTableView.dataSource = self
         
         Task{
