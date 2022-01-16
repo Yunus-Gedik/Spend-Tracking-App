@@ -113,10 +113,15 @@ class ExpensesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "addExpense"){
             let obj = segue.destination as! AddExpenseViewController
-            obj.groupCode = self.groupCode!
+            obj.groupCode = groupCode!
         }
         else if (segue.identifier == "expenseDetail"){
             let obj = segue.destination as! ExpenseDetailViewController
+            obj.expense = selectedExpense
+        }
+        else if (segue.identifier == "editExpense"){
+            let obj = segue.destination as! AddExpenseViewController
+            obj.groupCode = groupCode!
             obj.expense = selectedExpense
         }
     }
@@ -156,6 +161,11 @@ extension ExpensesViewController: UITableViewDataSource {
 extension ExpensesViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedExpense = expenses[indexPath.row]
-        performSegue(withIdentifier: "expenseDetail", sender: self)
+        if(selectedExpense!.spender == Auth.auth().currentUser!.email){
+            performSegue(withIdentifier: "editExpense", sender: self)
+        }
+        else{
+            performSegue(withIdentifier: "expenseDetail", sender: self)
+        }
     }
 }

@@ -800,6 +800,7 @@
                         <outlet property="tableView" destination="F55-lX-ZiS" id="Elx-nA-gLx"/>
                         <segue destination="I86-GI-u2u" kind="show" identifier="expenseDetail" id="vSc-AN-3cf"/>
                         <segue destination="l4V-ut-242" kind="show" identifier="addExpense" id="Gbe-LI-Pet"/>
+                        <segue destination="l4V-ut-242" kind="show" identifier="editExpense" id="qdy-S3-rmv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucY-21-F1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1102,6 +1103,7 @@
                     <navigationItem key="navigationItem" title="Add Expense" id="MMZ-18-u4w"/>
                     <connections>
                         <outlet property="amountTextField" destination="bqM-b7-7bT" id="jdo-nq-NPl"/>
+                        <outlet property="bottomButton" destination="Uig-Dw-Kdo" id="Ze2-KY-ZPc"/>
                         <outlet property="eventSwitch" destination="Igi-tj-gd8" id="UkS-3e-pVC"/>
                         <outlet property="expenseNameTextField" destination="ezc-bE-4VS" id="2Ap-Rg-mLn"/>
                         <outlet property="foodSwitch" destination="fYE-5M-sMA" id="vAU-ZI-zmj"/>
@@ -1598,6 +1600,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="qdy-S3-rmv"/>
         <segue reference="vSc-AN-3cf"/>
         <segue reference="3MC-Kn-ZiQ"/>
     </inferredMetricsTieBreakers>
