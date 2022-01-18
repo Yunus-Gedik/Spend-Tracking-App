@@ -79,11 +79,6 @@ class GroupsViewController: UIViewController {
     @IBAction func profileClicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "goProfile", sender: self)
     }
-        
-    @IBAction func createPersonalBalanceSheetClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "popUp", sender: self)
-    }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showGroupDetail"){
