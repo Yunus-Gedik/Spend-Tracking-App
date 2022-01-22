@@ -1,20 +1,30 @@
 # Spend-Tracking-App
-Spend Tracking application with a bunch of features.
+Spend Tracking application with a bunch of features. 
 
+Users of this application can bring people together in a group that spent money on a shared event. It can be people living together or friends on a vacation that want to keep track of expenses and analyze expenses later on to split the total amount.
 
+Login and register pages.
 ![Login Page](screenshots/login.png)
 ![Register Page](screenshots/register.png) <br/>
 
+Group list and create group page. There is a joining procedure in group enrolling.
 ![Groups Page](screenshots/groups.png)
 ![Create Group Page](screenshots/creategroup.png) <br/>
 
-![Expenses Page](screenshots/expenses.png)
-![Expense Detail Page](screenshots/exp_detail.png)
-![New Expense Page](screenshots/new_expense.png) <br/>
+Expenses entered in group lays in this page.
+![Expenses Page](screenshots/expenses.png) <br/>
 
+Createing and viewing an expense pages.
+![New Expense Page](screenshots/new_expense.png)
+![Expense Detail Page](screenshots/exp_detail.png) <br/>
+
+Group Information and administration page. View joining requests page. Only group admin can view requests.
 ![Group Info Page](screenshots/groupinfo.png)
-![All Users Page](screenshots/allusers.png)
-![Autherized Users Page](screenshots/authority.png)
 ![View Requests Page](screenshots/requests.png) <br/>
 
+View all users, only autherized users page.
+![All Users Page](screenshots/allusers.png)
+![Autherized Users Page](screenshots/authority.png) <br/>
+
+Group report page.
 ![Report Page](screenshots/rapor.png)
